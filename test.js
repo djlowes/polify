@@ -5060,7 +5060,8 @@ var test = {
  ]
 }
 
-for (let i=0; i<test.length; i++) {
-  $("#test").append(test.objects.person.link[i]);
-  console.log(test.objects.person.link[i])
+var input = test.objects;
+for (i=0; i<input.length; i++) {
+  arr = input[i].person.link
+  console.log (arr);
 }
