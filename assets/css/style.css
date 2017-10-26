@@ -1,5 +1,13 @@
-body {
-	font-family: "Palanquin", sans-serif;
+body  {
+	
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-family: 'Palanquin', sans-serif;
 }
 
 #topNav {
@@ -34,12 +42,19 @@ body {
 
 #logo {
 	margin-bottom: 30px;
+	font-size: 80px;
+	font-weight: bolder;
+	letter-spacing: 5px;
 }
 
 #mainContentSection {
-	margin-top: 50px;
+	padding-top: 20px;
 	background-color: #eff0f2;
 	height: 700px;
+}
+
+.firstRow {
+	margin-top: 50px;
 }
 
 .secondRow {
