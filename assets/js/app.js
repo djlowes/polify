@@ -31,7 +31,7 @@ function displayLinks() {
       twitterID = people[i].person.twitterid;
       youTubeID = people[i].person.youtubeid;
       roleType = people[i].person.link;
-      state = people[i].person.state;
+      state = people[i].state;
       // Push 541 entries to main object
       mainObject.push({firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state});
       }
