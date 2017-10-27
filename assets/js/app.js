@@ -2,6 +2,10 @@ $(document).ready(function() {
     displayLinks();
 });
 
+//Master object to be used to pull data from
+mainObject = []
+
+//Ajax call to Govtrack to push into master object
 function displayLinks() {
   var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=541"
 
@@ -30,10 +34,9 @@ function displayLinks() {
       state = people[i].person.state;
       // Create an object array of individual people (541 in total)
       obTest = [{firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state}];
-      // Push 541 entries to main object
       mainObject.push(obTest)
-      console.log(typeof obTest)
-      console.log(mainObject)
       }
+      // Push 541 entries to main object
+      console.log(mainObject)
   });
 }
