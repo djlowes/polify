@@ -1,13 +1,17 @@
 body  {
-	
+	margin: 0 auto;
 }
 
 p {
 	font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4 {
 	font-family: 'Palanquin', sans-serif;
+}
+
+ul {
+	list-style-type: none; 	
 }
 
 #topNav {
@@ -47,6 +51,14 @@ h1 {
 	letter-spacing: 5px;
 }
 
+#select-section {
+	margin-bottom: 40px;
+}
+
+#selectDropDown {
+	width: 400px;
+}
+
 #mainContentSection {
 	padding-top: 20px;
 	background-color: #eff0f2;
@@ -59,4 +71,22 @@ h1 {
 
 .secondRow {
 	margin-top: 20px;
+}
+
+#footer {
+	margin-top: 40px;
+}
+
+#footer a, a:hover, a:focus {
+	text-decoration: none;
+	color: #a3a3a3;
+}
+
+#footer-links ul {
+	display: inline-block;
+}
+
+.footer-contact {
+	float: right;
+	padding-right: 20px;
 }
