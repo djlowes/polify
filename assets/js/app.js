@@ -33,10 +33,13 @@ function displayLinks() {
       roleType = people[i].person.link;
       state = people[i].person.state;
       // Create an object array of individual people (541 in total)
-      obTest = [{firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state}];
+      obTest = {firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state};
       // Push 541 entries to main object
       mainObject.push(obTest)
       }
       console.log(mainObject)
   });
 }
+
+var getImage = mainObject[1];
+console.log(getImage)
