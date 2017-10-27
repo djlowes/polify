@@ -9,8 +9,8 @@ function displayLinks() {
     url: queryURL,
     method: "GET"
   }).done(function(response) {
-    console.log(response);
     var people = response.objects;
+    //iterate through the object
     for (i=0; i<people.length; i++) {
       //Get image URL of image
       arr = people[i].person.link;
@@ -28,8 +28,9 @@ function displayLinks() {
       youTubeID = people[i].person.youtubeid;
       roleType = people[i].person.link;
       state = people[i].person.state;
-
+      // Create an object array of individual people (541 in total)
       obTest = [{firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state}];
+      // Push 541 entries to main object
       mainObject.push(obTest)
       console.log(typeof obTest)
       console.log(mainObject)
