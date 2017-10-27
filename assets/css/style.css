@@ -62,7 +62,7 @@ ul {
 #mainContentSection {
 	padding-top: 20px;
 	background-color: #eff0f2;
-	height: 700px;
+	height: 600px;
 }
 
 .firstRow {
@@ -86,7 +86,4 @@ ul {
 	display: inline-block;
 }
 
-.footer-contact {
-	float: right;
-	padding-right: 20px;
-}
+
