@@ -1,33 +1,3 @@
-var mainObject = [
-  {
-  firstName: "",
-  lastName: "",
-  party: "",
-  gender: "",
-  link: "",
-  imageURL: "",
-  nickname: "",
-  twitterID: "",
-  youTubeID: "",
-  roleType: "",
-  state: "",
-},
-{
-  firstName: "",
-  lastName: "",
-  party: "",
-  gender: "",
-  link: "",
-  imageURL: "",
-  nickname: "",
-  twitterID: "",
-  youTubeID: "",
-  roleType: "",
-  state: "",
-},
-]
-
-
 $(document).ready(function() {
     displayLinks();
 });
@@ -42,21 +12,27 @@ function displayLinks() {
     console.log(response);
     var people = response.objects;
     for (i=0; i<people.length; i++) {
+      //Get image URL of image
       arr = people[i].person.link;
-      var test = arr.slice(-6)
-      console.log(test)
-      //console.log(arr);
-      //console.log(typeof arr);
-      var imageURL = "https://www.govtrack.us/data/photos/" + test
-      //console.log(imageURL)
-  }
+      var slicy = arr.slice(-6)
+      var imageURL = "https://www.govtrack.us/data/photos/" + slicy +".jpeg"
+      // Push all relevant information to array
+      fName = people[i].person.firstname;
+      lName = people[i].person.lastname;
+      party = people[i].party;
+      gender = people[i].person.gender;
+      link = people[i].person.link;
+      image = imageURL
+      nickname = people[i].person.nickname;
+      twitterID = people[i].person.twitterid;
+      youTubeID = people[i].person.youtubeid;
+      roleType = people[i].person.link;
+      state = people[i].person.state;
+
+      obTest = [{firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state}];
+      mainObject.push(obTest)
+      console.log(typeof obTest)
+      console.log(mainObject)
+      }
   });
 }
-
-// Step 1 - Slice the last 6 characters from the string
-// Step 2 - Create a news tring with base url
-// Step 3 - Concantanate the sliced characters with the Base url at    negative index 5.
-//For example -
-// https://www.govtrack.us/congress/members/wayne_allard/300003
-// turns into -
-// https://www.govtrack.us/data/photos/300003.jpeg
