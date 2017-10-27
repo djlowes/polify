@@ -6,7 +6,7 @@ p {
 	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Palanquin', sans-serif;
 }
 
@@ -62,7 +62,7 @@ ul {
 #mainContentSection {
 	padding-top: 20px;
 	background-color: #eff0f2;
-	height: 600px;
+	height: 700px;
 }
 
 .firstRow {
@@ -71,6 +71,12 @@ ul {
 
 .secondRow {
 	margin-top: 20px;
+}
+
+.mainChartText {
+	color: grey;
+	padding-top: 10px;
+
 }
 
 #footer {
