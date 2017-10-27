@@ -1,5 +1,5 @@
 //Master object to be used to pull data from
-var mainObject = []
+var mainObject = [];
 
 //Ajax call to Govtrack to push into master object
 var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=541"
@@ -12,27 +12,46 @@ var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=541"
     //iterate through the object
     for (i=0; i<people.length; i++) {
       //Get image URL of image
-      arr = people[i].person.link;
+      var arr = people[i].person.link;
       var slicy = arr.slice(-6)
       var imageURL = "https://www.govtrack.us/data/photos/" + slicy +".jpeg"
       // Push all relevant information to array
-      fName = people[i].person.firstname;
-      lName = people[i].person.lastname;
-      party = people[i].party;
-      gender = people[i].person.gender;
-      link = people[i].person.link;
-      image = imageURL;
-      nickname = people[i].person.nickname;
-      twitterID = people[i].person.twitterid;
-      youTubeID = people[i].person.youtubeid;
-      roleType = people[i].role_type_label;
-      state = people[i].state;
-      // Push 541 entries to main object
-      mainObject.push({firstName: fName, lastName: lName, party: party, gender: gender, link: link, image: image, nickname: nickname, twitter: twitterID, youtube: youTubeID, role: roleType, state: state});
+      var fName = people[i].person.firstname;
+      var lName = people[i].person.lastname;
+      var party = people[i].party;
+      var gender = people[i].person.gender;
+      var link = people[i].person.link;
+      var image = imageURL;
+      var nickname = people[i].person.nickname;
+      var twitterID = people[i].person.twitterid;
+      var youTubeID = people[i].person.youtubeid;
+      var roleType = people[i].role_type_label;
+      var state = people[i].state;
+      var congressMan = {
+        firstName: fName, 
+        lastName: lName, 
+        party: party, 
+        gender: gender, 
+        link: link, 
+        image: image, 
+        nickname: nickname, 
+        twitter: twitterID, 
+        youtube: youTubeID, 
+        role: roleType, 
+        state: state
       }
-      console.log(mainObject["0"])
-      console.log(mainObject["0"].firstName + " " + mainObject["0"].lastName + " from " + mainObject["0"].state)
+      // Push 541 entries to main object
+      mainObject.push(congressMan);
+      }
+      // console.log(mainObject[300]);
+      // console.log(mainObject[300].firstName + " " + mainObject[300].lastName + " from " + mainObject[300].state);
+      printAfter(mainObject);
   });
+
+  function printAfter(bigObject) { 
+
+  console.log("first element: " + bigObject[100].firstName);
+};
 
 /*
   console.log("why is this " + mainObject["0"])
