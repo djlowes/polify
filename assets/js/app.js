@@ -34,8 +34,9 @@ var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=541"
       console.log(mainObject["0"].firstName + " " + mainObject["0"].lastName + " from " + mainObject["0"].state)
   });
 
-  //console.log("why is this " + mainObject["0"])
-  //console.log(mainObject["0"].firstName + " " + mainObject["0"].lastName + " from " + mainObject["0"].state)
+/*
+  console.log("why is this " + mainObject["0"])
+  console.log(mainObject["0"].firstName + " " + mainObject["0"].lastName + " from " + mainObject["0"].state)
 
 var queryURLTwo = "https://api-us.faceplusplus.com/facepp/v3/face/analyze"
 var key = "gTJWVxi-B7ySv60XLZ1NYsp1lMcpBn6H"
@@ -50,3 +51,4 @@ $.ajax({
 }).done(function(response) {
 console.log(response)
 });
+*/
