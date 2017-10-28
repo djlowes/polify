@@ -1,22 +1,22 @@
-/*
-var config = {
-    apiKey: "AIzaSyAH498q5xfRdRITk_-cg4OlD50_4zRz5SU",
-    authDomain: "jproject-f5600.firebaseapp.com",
-    databaseURL: "https://jproject-f5600.firebaseio.com",
-    projectId: "jproject-f5600",
-    storageBucket: "jproject-f5600.appspot.com",
-    messagingSenderId: "410141371595"
-  };
+/*var config = {
+  apiKey: "AIzaSyAH498q5xfRdRITk_-cg4OlD50_4zRz5SU",
+  authDomain: "jproject-f5600.firebaseapp.com",
+  databaseURL: "https://jproject-f5600.firebaseio.com",
+  projectId: "jproject-f5600",
+  storageBucket: "jproject-f5600.appspot.com",
+  messagingSenderId: "410141371595"
+};
 
 firebase.initializeApp(config);
 var dataRef = firebase.database();
-*/
 
+*/
 //Master object to be used to pull data from
-var mainObject = []
+var mainObject = [];
+var mainObjectTwo = [];
 
 //Ajax call to Govtrack to push into master object
-var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=5"
+var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=2"
 
 $.ajax({
   url: queryURL,
@@ -58,6 +58,7 @@ $.ajax({
   }
 
   $(function() {
+    var objectTwo = []
     for (j = 0; j < mainObject.length; j++) {
       getImage = mainObject[j].image
 
@@ -71,19 +72,13 @@ $.ajax({
         type: "POST",
         data: `{"url": "${getImage}"}`,
       }).done(function(data) {
-        anger = people[i].person.firstname;
-        contempt = people[i].person.lastname;
-        disgust = people[i].party;
-        fear = people[i].person.gender;
-        happiness = people[i].person.link;
-        neutral = people[i].person.link;
-        sadness = people[i].person.link;
-
-        console.log(data)
+        mainObjectTwo.push(data)
       })
     }
   });
+  console.log(mainObjectTwo)
 
-  console.log(mainObject)
+
+
 
 });
