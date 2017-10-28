@@ -4,6 +4,7 @@ body  {
 
 p {
 	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,6 +18,11 @@ ul {
 #topNav {
 	height: 57px;
 	background: #EBEDEF; 
+}
+
+#subHeader {
+	letter-spacing: 5px;
+	font-size: 30px;
 }
 
 .add-on .input-group-btn > .btn {
@@ -45,10 +51,10 @@ ul {
 }
 
 #logo {
-	margin-bottom: 30px;
 	font-size: 80px;
 	font-weight: bolder;
 	letter-spacing: 5px;
+	margin-bottom: 30px;
 }
 
 #select-section {
@@ -78,6 +84,27 @@ ul {
 	padding-top: 10px;
 
 }
+
+/* politician page */
+#politicianPageMain {
+	margin-top: 40px;
+}
+/* politician photo */
+
+#politicianBioImage {
+
+}
+
+#politicianTableRank {
+	margin-left: 20px;
+}
+
+#twitterIcon {
+	color: #00aced;
+}
+
+
+/* global footers */
 
 #footer {
 	margin-top: 40px;
