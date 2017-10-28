@@ -1,3 +1,4 @@
+/*
 $(function() {
        var params = {
            // Request parameters
@@ -27,3 +28,4 @@ $(function() {
            alert("error");
        });
    });
+*/

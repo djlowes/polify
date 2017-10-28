@@ -71,6 +71,13 @@ $.ajax({
         type: "POST",
         data: `{"url": "${getImage}"}`,
       }).done(function(data) {
+        anger = people[i].person.firstname;
+        contempt = people[i].person.lastname;
+        disgust = people[i].party;
+        fear = people[i].person.gender;
+        happiness = people[i].person.link;
+        neutral = people[i].person.link;
+        sadness = people[i].person.link;
 
         console.log(data)
       })
