@@ -17,7 +17,7 @@ ul {
 
 #topNav {
 	height: 57px;
-	background: #EBEDEF; 
+	background: #EBEDEF;
 }
 
 #subHeader {
@@ -25,20 +25,31 @@ ul {
 	font-size: 30px;
 }
 
+.nav {
+	position: fixed;
+	left: 0;
+}
+
 .add-on .input-group-btn > .btn {
-  border-left-width:0;left:-2px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-left-width: 0;
+/*  left: -2px;*/
+  -webkit-box-shadow: inset 0 1px 1px 
+  rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px 
+  rgba(0, 0, 0, 0.075);
 }
 
 /* stop the glowing blue shadow */
 .add-on .form-control:focus {
- box-shadow:none;
- -webkit-box-shadow:none; 
- border-color:#cccccc; 
+ box-shadow: none;
+ -webkit-box-shadow: none; 
+ border-color: #cccccc; 
 }
 
-.form-control{width:20%}
+.form-control {
+	width:20%;
+}
+
 .navbar-nav > li > a {
   border-right: 1px solid #ddd;
   padding-bottom: 15px;
