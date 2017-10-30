@@ -18,16 +18,15 @@ ul {
 #topNav {
 	height: 57px;
 	background: #EBEDEF;
+	position: fixed;
+	top:0;
 }
 
 #subHeader {
 	letter-spacing: 5px;
 	font-size: 30px;
-}
-
-.nav {
 	position: fixed;
-	left: 0;
+	left: 500px;
 }
 
 .add-on .input-group-btn > .btn {
@@ -98,7 +97,7 @@ ul {
 
 /* politician page */
 #politicianPageMain {
-	margin-top: 40px;
+	margin-top: 100px;
 }
 /* politician photo */
 
@@ -107,7 +106,22 @@ ul {
 }
 
 #politicianTableRank {
+	margin-left: 50px;
+}
+
+.tableRankRow {
+	margin: 10px;	
+}
+
+.emotionIcon {
+	width: 30px; 
+	height: 30px;
+}
+
+
+.emotionText {
 	margin-left: 20px;
+	margin-right: 10px;
 }
 
 #twitterIcon {
