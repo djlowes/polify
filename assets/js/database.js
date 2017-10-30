@@ -18,7 +18,7 @@ var mainObject = [];
 var mainObjectTwo = [];
 
 //Ajax call to Govtrack to push into master object
-var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=4"
+var queryURL = "https://www.govtrack.us/api/v2/role?current=true&limit=541"
 
 $.ajax({
   url: queryURL,
@@ -58,11 +58,11 @@ $.ajax({
       state: state
     });
   }
+
   // Get images ready for ajax call to azure's emotion API
   $(function() {
     var objectTwo = []
-    for (let j = 0; j < mainObject.length; j++) {
-      getImage = mainObject[j].image
+      getImage = mainObject[32].image
 
       // Call API
       var params = {};
@@ -77,13 +77,15 @@ $.ajax({
         //Push response data (emotion rankings) to Firebase DB
       }).done(function(data) {
         mainObjectTwo.push(data)
+        // CAN TRY AND JSON.PARSE and JSON.STRINGIFY INTO A NEW OBJECT OR MAIN.JSON FILE
         var emotion = data[0].scores;
-        console.log(emotion)
-        dataRef.ref().child('Emotions').push(emotion)
+        console.log(JSON.stringify(emotion));
+        //localStorage.setItem(19, JSON.stringify(emotion));
+        //dataRef.ref().child('Emotions2').push(mainObjectTwo)
       })
-    }
+
   });
   //Push congressman data to Firebase DB
-  dataRef.ref().child('Congressman').push(mainObject)
+  //dataRef.ref().child('Congressman').push(mainObject)
 
 });
