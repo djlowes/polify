@@ -22,6 +22,16 @@ ul {
 	top:0;
 }
 
+#topNavP {
+	height: 57px;
+	background: #EBEDEF;
+	position: fixed;
+	top:0;
+	z-index: 99;	
+}
+
+
+
 #subHeader {
 	letter-spacing: 5px;
 	font-size: 30px;
@@ -102,7 +112,8 @@ ul {
 /* politician photo */
 
 #politicianBioImage {
-
+	width: 200px;
+	height: 200px;
 }
 
 #politicianTableRank {
@@ -137,7 +148,19 @@ ul {
 
 #footer {
 	margin-top: 40px;
+}
 
+#footerP {
+	margin-top: 40px;
+	position: fixed;
+	left: 300px;
+	text-decoration: none;
+	color: #a3a3a;
+}
+
+#footerP a, a:hover, a:focus {
+	text-decoration: none;
+	color: #a3a3a3;
 }
 
 #footer a, a:hover, a:focus {
@@ -147,7 +170,7 @@ ul {
 
 
 #footer-links ul {
-	display: inline-block;
+	vertical-align: top;
 }
 
 
