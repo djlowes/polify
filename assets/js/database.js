@@ -58,11 +58,11 @@ $.ajax({
       state: state
     });
   }
-  /*
+
   // Get images ready for ajax call to azure's emotion API
   $(function() {
     var objectTwo = []
-      getImage = mainObject[19].image
+      getImage = mainObject[32].image
 
       // Call API
       var params = {};
@@ -80,12 +80,12 @@ $.ajax({
         // CAN TRY AND JSON.PARSE and JSON.STRINGIFY INTO A NEW OBJECT OR MAIN.JSON FILE
         var emotion = data[0].scores;
         console.log(JSON.stringify(emotion));
-        localStorage.setItem(19, JSON.stringify(emotion));
+        //localStorage.setItem(19, JSON.stringify(emotion));
         //dataRef.ref().child('Emotions2').push(mainObjectTwo)
       })
 
   });
   //Push congressman data to Firebase DB
   //dataRef.ref().child('Congressman').push(mainObject)
-*/
+
 });

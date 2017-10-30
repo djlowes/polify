@@ -419,9 +419,9 @@ var congressman = [{
   "sadness": 1.402145e-11,
   "surprise": 5.529856e-10
 
-}]
+}];
 
-function aveAnger () {
+function aveAnger() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].anger)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -429,7 +429,7 @@ function aveAnger () {
   }
 }
 
-function aveContempt () {
+function aveContempt() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].contempt)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -437,7 +437,7 @@ function aveContempt () {
   }
 }
 
-function aveDisgust () {
+function aveDisgust() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].disgust)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -445,7 +445,7 @@ function aveDisgust () {
   }
 }
 
-function aveFear () {
+function aveFear() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].fear)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -453,7 +453,7 @@ function aveFear () {
   }
 }
 
-function aveHappiness () {
+function aveHappiness() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].happiness)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -461,7 +461,7 @@ function aveHappiness () {
   }
 }
 
-function aveNeutral () {
+function aveNeutral() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].neutral)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -469,7 +469,7 @@ function aveNeutral () {
   }
 }
 
-function aveSadness () {
+function aveSadness() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].sadness)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -477,7 +477,7 @@ function aveSadness () {
   }
 }
 
-function aveSurprise () {
+function aveSurprise() {
   for (let i = 0; i<congressman.length; i++) {
     let result = (math.sum(congressman[i].surprise)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
@@ -485,240 +485,606 @@ function aveSurprise () {
   }
 }
 
+
+//BY GENDER
+
 function femaleAveAnger() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].gender === "female") {
+    if (congressman[i].gender == "female") {
       mathyOne.push(math.sum(congressman[i].anger))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
-  }
-  return result
+}
+  return result;
 }
 
 
-function femaleAveContempt () {
+function femaleAveContempt() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].contempt))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function femaleAveDisgust () {
+function femaleAveDisgust() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].disgust))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function femaleAveFear () {
+function femaleAveFear() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].fear))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function femaleAveHappiness () {
+function femaleAveHappiness() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].happiness))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function femaleAveNeutral () {
+function femaleAveNeutral() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].neutral))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function femaleAveSadness () {
+function femaleAveSadness() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].sadness))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function femaleAveSurprise () {
+function femaleAveSurprise() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "female") {
       mathyOne.push(math.sum(congressman[i].surprise))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveAnger () {
+function maleAveAnger() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].anger))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveContempt () {
+function maleAveContempt() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].contempt))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveDisgust () {
+function maleAveDisgust() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].disgust))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveFear () {
+function maleAveFear() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].fear))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveHappiness () {
+function maleAveHappiness() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].happiness))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveNeutral () {
+function maleAveNeutral() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].neutral))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveSadness () {
+function maleAveSadness() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
       mathyOne.push(math.sum(congressman[i].sadness))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
   }
-  return result
+  return (result);
 }
 
-function maleAveSurprise () {
+function maleAveSurprise() {
   var mathyOne = [];
   var total = 0;
   for (let i = 0; i < congressman.length; i++) {
     if (congressman[i].gender === "male") {
+      mathyOne.push(math.sum(congressman[i].surprise))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return (result);
+}
+
+
+// BY POLITICAL PARTY
+
+function democratAnger() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
       mathyOne.push(math.sum(congressman[i].anger))
     }
-    for (var j in mathyOne) {
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratContempt() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].contempt))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratDisgust() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].disgust))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratFear() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].fear))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratHappiness() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].happiness))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratNeutral() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].neutral))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratSadness() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].sadness))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function democratSurprise() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Democrat") {
+      mathyOne.push(math.sum(congressman[i].surprise))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanAnger() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].anger))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanContempt() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].contempt))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanDisgust() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].disgust))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanFear() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].fear))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanHappiness() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].happiness))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanNeutral() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].neutral))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanSadness() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].sadness))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function republicanSurprise() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Republican") {
+      mathyOne.push(math.sum(congressman[i].surprise))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentAnger() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].anger))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentContempt() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].contempt))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentDisgust() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].disgust))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentFear() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].fear))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentHappiness() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].happiness))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentNeutral() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].neutral))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentSadness() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].sadness))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
+      total += mathyOne[j]
+    }
+    var result = total / mathyOne.length
+  }
+  return result
+}
+
+function independentSurprise() {
+  var mathyOne = [];
+  var total = 0;
+  for (let i = 0; i < congressman.length; i++) {
+    if (congressman[i].party === "Independent") {
+      mathyOne.push(math.sum(congressman[i].surprise))
+    }
+    for (let j = 0; j<mathyOne.length; j++) {
       total += mathyOne[j]
     }
     var result = total / mathyOne.length
@@ -728,6 +1094,44 @@ function maleAveSurprise () {
 
 
 
+
+//OVERALL RANKINGS FOR EACH EMOTION
+
+// Each array will be used to rank congressman on attributes from lowest to highest
+var angerLowestToHighest = [];
+var contemptLowestToHighest = [];
+var disgustLowestToHighest = [];
+var fearLowestToHighest = [];
+var happinessLowestToHighest = [];
+var neutralLowestToHighest = [];
+var sadnessLowestToHighest = [];
+var surpriseLowestToHighest = [];
+
+Array.prototype.sortBy = function(emotionA) {
+  return this.slice(0).sort(function(a,b) {
+    return (a[emotionA] > b[emotionA]) ? 1 : (a[emotionA] < b[emotionA]) ? -1 : 0;
+  });
+}
+
+// Push to Arrays
+angerLowestToHighest.push(congressman.sortBy('anger'));
+contemptLowestToHighest.push(congressman.sortBy('contempt'));
+disgustLowestToHighest.push(congressman.sortBy('disgust'));
+fearLowestToHighest.push(congressman.sortBy('fear'));
+happinessLowestToHighest.push(congressman.sortBy('happiness'));
+neutralLowestToHighest.push(congressman.sortBy('neutral'));
+sadnessLowestToHighest.push(congressman.sortBy('sadness'));
+surpriseLowestToHighest.push(congressman.sortBy('surprise'));
+//console.log(angerLowestToHighest)
+//console.log(contemptLowestToHighest)
+console.log(happinessLowestToHighest)
+console.log(sadnessLowestToHighest)
+
+
+
+
+
+//INSERT CHARTS BELOW
 
 
 var ctx = document.getElementById("myChart");
@@ -736,8 +1140,8 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["Anger", "Contempt", "Disgust", "Fear", "Neutral", "Sadness", "Surprise"],
         datasets: [{
-            label: 'female emotions',
-            data: [femaleAveAnger(), femaleAveContempt(), femaleAveDisgust(), femaleAveFear(), femaleAveSadness(), femaleAveSurprise()],
+            label: 'Independents',
+            data: [independentAnger(), independentContempt(), independentDisgust(), independentFear(), independentSadness(), independentSurprise()],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
