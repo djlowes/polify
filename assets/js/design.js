@@ -11481,7 +11481,7 @@ function maleAveSadness() {
       mathyOne.push(math.sum(congressman[i].sadness))
     }
     for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
+      total += mathyOne[j];
     }
     var result = total / mathyOne.length
   }
@@ -11866,59 +11866,45 @@ function independentSurprise() {
   return result
 }
 
+//Pull out anger
+
+
+//Pull out Sadness
 
 
 
-//OVERALL RANKINGS FOR EACH EMOTION
-
-// Each array will be used to rank congressman on attributes from lowest to highest
-var angerLowestToHighest = [];
-var contemptLowestToHighest = [];
-var disgustLowestToHighest = [];
-var fearLowestToHighest = [];
-var happinessLowestToHighest = [];
-var neutralLowestToHighest = [];
-var sadnessLowestToHighest = [];
-var surpriseLowestToHighest = [];
-
+//OVERALL RANKINGS FOR EACH EMOTION IN ORDER - SORT ALGORITHM
+// Each array will be used to rank congressman on attributes from highest (most) to lowest.
+var angerHighest = [];
+var contemptHighest = [];
+var disgustHighest = [];
+var fearHighest = [];
+var happinessHighest = [];
+var neutralHighest = [];
+var sadnessHighest = [];
+var surpriseHighest = [];
 Array.prototype.sortBy = function(emotionA) {
   return this.slice(0).sort(function(a, b) {
     return (a[emotionA] > b[emotionA]) ? 1 : (a[emotionA] < b[emotionA]) ? -1 : 0;
   });
 }
-
-
-
 // Push to Arrays
-angerLowestToHighest.push(congressman.sortBy('anger').reverse());
-contemptLowestToHighest.push(congressman.sortBy('contempt'));
-disgustLowestToHighest.push(congressman.sortBy('disgust'));
-fearLowestToHighest.push(congressman.sortBy('fear'));
-happinessLowestToHighest.push(congressman.sortBy('happiness'));
-neutralLowestToHighest.push(congressman.sortBy('neutral'));
-sadnessLowestToHighest.push(congressman.sortBy('sadness'));
-surpriseLowestToHighest.push(congressman.sortBy('surprise'));
-console.log(angerLowestToHighest)
-//console.log(contemptLowestToHighest)
-//console.log(happinessLowestToHighest)
-//console.log(sadnessLowestToHighest)
+angerHighest.push(congressman.sortBy('anger').reverse());
+contemptHighest.push(congressman.sortBy('contempt').reverse());
+disgustHighest.push(congressman.sortBy('disgust').reverse());
+fearHighest.push(congressman.sortBy('fear').reverse());
+//happinessHighest.push(congressman.sortBy('happiness'));
+neutralHighest.push(congressman.sortBy('neutral').reverse());
+sadnessHighest.push(congressman.sortBy('sadness').reverse());
+surpriseHighest.push(congressman.sortBy('surprise').reverse());
+console.log(fearHighest)
 
 
-function angerSort(a, b) {
-  if (a.anger < b.anger)
-    return -1;
-  if (a.anger > b.anger)
-    return 1;
-  return 0;
-}
 
-console.log(congressman.sortBy(angerSort).reverse());
-//console.log(congressman.sort(angerSort));
 
 
 
 //INSERT CHARTS BELOW
-
 
 var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
@@ -11965,6 +11951,220 @@ var myChart = new Chart(ctx, {
     labels: ["Males", "Females"],
     datasets: [{
       label: 'Fear - males vs females',
+      data: [maleAveContempt(), femaleAveContempt()],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(255, 159, 64, 0.2)'
+      ],
+      borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  }
+});
+
+var map = AmCharts.makeChart( "chartdiv", {
+  "type": "map",
+  "theme": "none",
+  "colorSteps": 10,
+
+  "dataProvider": {
+    "map": "usaLow",
+    "areas": [ {
+      "id": "US-AL",
+      "value": 4447100
+    }, {
+      "id": "US-AK",
+      "value": 626932
+    }, {
+      "id": "US-AZ",
+      "value": 5130632
+    }, {
+      "id": "US-AR",
+      "value": 2673400
+    }, {
+      "id": "US-CA",
+      "value": 33871648
+    }, {
+      "id": "US-CO",
+      "value": 4301261
+    }, {
+      "id": "US-CT",
+      "value": 3405565
+    }, {
+      "id": "US-DE",
+      "value": 783600
+    }, {
+      "id": "US-FL",
+      "value": 15982378
+    }, {
+      "id": "US-GA",
+      "value": 8186453
+    }, {
+      "id": "US-HI",
+      "value": 1211537
+    }, {
+      "id": "US-ID",
+      "value": 1293953
+    }, {
+      "id": "US-IL",
+      "value": 12419293
+    }, {
+      "id": "US-IN",
+      "value": 6080485
+    }, {
+      "id": "US-IA",
+      "value": 2926324
+    }, {
+      "id": "US-KS",
+      "value": 2688418
+    }, {
+      "id": "US-KY",
+      "value": 4041769
+    }, {
+      "id": "US-LA",
+      "value": 4468976
+    }, {
+      "id": "US-ME",
+      "value": 1274923
+    }, {
+      "id": "US-MD",
+      "value": 5296486
+    }, {
+      "id": "US-MA",
+      "value": 6349097
+    }, {
+      "id": "US-MI",
+      "value": 9938444
+    }, {
+      "id": "US-MN",
+      "value": 4919479
+    }, {
+      "id": "US-MS",
+      "value": 2844658
+    }, {
+      "id": "US-MO",
+      "value": 5595211
+    }, {
+      "id": "US-MT",
+      "value": 902195
+    }, {
+      "id": "US-NE",
+      "value": 1711263
+    }, {
+      "id": "US-NV",
+      "value": 1998257
+    }, {
+      "id": "US-NH",
+      "value": 1235786
+    }, {
+      "id": "US-NJ",
+      "value": 8414350
+    }, {
+      "id": "US-NM",
+      "value": 1819046
+    }, {
+      "id": "US-NY",
+      "value": 18976457
+    }, {
+      "id": "US-NC",
+      "value": 8049313
+    }, {
+      "id": "US-ND",
+      "value": 642200
+    }, {
+      "id": "US-OH",
+      "value": 11353140
+    }, {
+      "id": "US-OK",
+      "value": 3450654
+    }, {
+      "id": "US-OR",
+      "value": 3421399
+    }, {
+      "id": "US-PA",
+      "value": 12281054
+    }, {
+      "id": "US-RI",
+      "value": 1048319
+    }, {
+      "id": "US-SC",
+      "value": 4012012
+    }, {
+      "id": "US-SD",
+      "value": 754844
+    }, {
+      "id": "US-TN",
+      "value": 5689283
+    }, {
+      "id": "US-TX",
+      "value": 20851820
+    }, {
+      "id": "US-UT",
+      "value": 2233169
+    }, {
+      "id": "US-VT",
+      "value": 608827
+    }, {
+      "id": "US-VA",
+      "value": 7078515
+    }, {
+      "id": "US-WA",
+      "value": 5894121
+    }, {
+      "id": "US-WV",
+      "value": 1808344
+    }, {
+      "id": "US-WI",
+      "value": 5363675
+    }, {
+      "id": "US-WY",
+      "value": 493782
+    } ]
+  },
+
+  "areasSettings": {
+    "autoZoom": true
+  },
+
+  "valueLegend": {
+    "right": 10,
+    "minValue": "little",
+    "maxValue": "a lot!"
+  },
+
+  "export": {
+    "enabled": true
+  }
+
+} );
+
+var ctx = document.getElementById("myChartThree");
+var myChart = new Chart(ctx, {
+  type: 'bubble',
+  data: {
+    labels: ["Males", "Females"],
+    datasets: [{
+      label: 'Contempt - males vs females',
       data: [maleAveContempt(), femaleAveContempt()],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
