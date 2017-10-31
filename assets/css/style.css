@@ -112,8 +112,10 @@ ul {
 /* politician photo */
 
 #politicianBioImage {
-	width: 200px;
+/*	width: 200px;
 	height: 200px;
+*/
+	width: 100%;
 }
 
 #politicianTableRank {
@@ -171,6 +173,37 @@ ul {
 
 #footer-links ul {
 	vertical-align: top;
+}
+
+
+#search-container {
+  position: absolute;
+/*  margin-left: -120px;
+  top: 120px;
+  left: 50%;*/
+}
+
+#result, #search-bar {
+  text-rendering: optimizelegibility;
+  width: 240px;
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 2px;
+  outline: none;
+  letter-spacing: 0.6px;
+}
+
+#search-bar {
+  border: 1px solid transparent;
+  position: absolute;
+  background: transparent;
+  color: #666;
+  top: 0;
+}
+
+#result {
+  border: 1px solid #999;
+  color: #bebebe;
 }
 
 

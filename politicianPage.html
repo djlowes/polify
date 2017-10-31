@@ -19,7 +19,7 @@
         <!-- Google fonts  -->
         <link href="https://fonts.googleapis.com/css?family=Palanquin|Roboto" rel="stylesheet">
     </head>
-    <body>
+   <body onload="renderPPage()">
         <!-- top nav -->
         <div class="container-fluid" id="topNavP">
             <div class="row">
@@ -51,7 +51,7 @@
               <!-- image bio -->
                 <div class="col-2">
                     <div>
-                        <img src="http://via.placeholder.com/200x200" class="rounded float-left" alt="">
+                        <img src="http://via.placeholder.com/200x200" class="rounded float-left" alt="" id="politicianBioImage">
                     </div>
                  </div>
                  <div class="col-7">   
@@ -100,23 +100,12 @@
                     <!-- twitter feed -->    
                       <div class="card" id="twitterDiv">
                           <div class="card-body">
-                              <i class="fa fa-twitter fa-3x" aria-hidden="true" id="twitterIcon"></i> Twitter Feed
+                              <div class="fa fa-twitter fa-3x" aria-hidden="true"></div> Twitter Feed
                           </div>
-                          <div class="card-body float-left" id="tweet1">
-                              Tweet 1
+                          <div class="card-body float-left" id="tweets">
+                              
                           </div>
-                          <div class="card-body float-left" id="tweet2">
-                              Tweet 2
-                          </div>
-                          <div class="card-body float-left" id="tweet3">
-                              Tweet 3
-                          </div>
-                          <div class="card-body float-left" id="tweet4">
-                              Tweet 4
-                          </div>
-                          <div class="card-body float-left" id="tweet5">
-                              Tweet 5
-                          </div>
+                          
                       </div>
                     <!-- end twitter feed -->   
                 </div>
@@ -145,11 +134,13 @@
                 </div>           
             </div>
         </div>    
-        <script src="assets/js/main.js"></script>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+        <script src="assets/js/codebird.js" type="text/javascript"></script>
+        <script src="assets/js/app.js" type="text/javascript"></script>
   </body>        
 </html>

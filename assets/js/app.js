@@ -141,20 +141,16 @@ databaseRef.on("child_added", function(childSnapshot) {
   });
 });
 
-
-
-
-
 $("#submit-btn").on("click", function(event){
   event.preventDefault();
   sessionStorage.clear();
 
-  console.log("result val: "+ searchKey);
+  // console.log("result val: "+ searchKey);
   
   var searchedArray = searchKey.split(" ");
   searchedFName = searchedArray[0];
   searchedLName = searchedArray[1];
-  console.log("Search key no spaces: "+ searchedFName + " " + searchedLName);
+  // console.log("Search key no spaces: "+ searchedFName + " " + searchedLName);
 
   sessionStorage.setItem("localFirstName", searchedFName);
   sessionStorage.setItem("localLastName", searchedLName);
@@ -182,6 +178,8 @@ function renderPPage(){
       if(result[i].firstName == fName && result[i].lastName == lName) {
         var twitterid = result[i].twitter;
         twitterFeedByUser(twitterid);
+        console.log("result image: "+ result[i].image);
+        $("#politicianBioImage").attr("src", result[i].image);
         break;
       }
     }    
@@ -235,15 +233,13 @@ function twitterFeedByUser(userID) {
 };
 
 
-
-
 function aveAnger() {
   for (let i = 0; i < congressman.length; i++) {
     let result = (math.sum(congressman[i].anger)) / congressman.length;
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveContempt() {
   for (let i = 0; i < congressman.length; i++) {
@@ -251,7 +247,7 @@ function aveContempt() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveDisgust() {
   for (let i = 0; i < congressman.length; i++) {
@@ -259,7 +255,7 @@ function aveDisgust() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveFear() {
   for (let i = 0; i < congressman.length; i++) {
@@ -267,7 +263,7 @@ function aveFear() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveHappiness() {
   for (let i = 0; i < congressman.length; i++) {
@@ -275,7 +271,7 @@ function aveHappiness() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveNeutral() {
   for (let i = 0; i < congressman.length; i++) {
@@ -283,7 +279,7 @@ function aveNeutral() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveSadness() {
   for (let i = 0; i < congressman.length; i++) {
@@ -291,7 +287,7 @@ function aveSadness() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 function aveSurprise() {
   for (let i = 0; i < congressman.length; i++) {
@@ -299,7 +295,7 @@ function aveSurprise() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}
+};
 
 
 //BY GENDER
@@ -317,7 +313,7 @@ function femaleAveAnger() {
     var result = total / mathyOne.length
   }
   return result;
-}
+};
 
 
 function femaleAveContempt() {
@@ -333,7 +329,7 @@ function femaleAveContempt() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function femaleAveDisgust() {
   var mathyOne = [];
@@ -348,7 +344,7 @@ function femaleAveDisgust() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function femaleAveFear() {
   var mathyOne = [];
@@ -363,7 +359,7 @@ function femaleAveFear() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function femaleAveHappiness() {
   var mathyOne = [];
@@ -378,7 +374,7 @@ function femaleAveHappiness() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function femaleAveNeutral() {
   var mathyOne = [];
@@ -393,7 +389,7 @@ function femaleAveNeutral() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function femaleAveSadness() {
   var mathyOne = [];
@@ -408,7 +404,7 @@ function femaleAveSadness() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function femaleAveSurprise() {
   var mathyOne = [];
@@ -423,7 +419,7 @@ function femaleAveSurprise() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveAnger() {
   var mathyOne = [];
@@ -438,7 +434,7 @@ function maleAveAnger() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveContempt() {
   var mathyOne = [];
@@ -453,7 +449,7 @@ function maleAveContempt() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveDisgust() {
   var mathyOne = [];
@@ -468,7 +464,7 @@ function maleAveDisgust() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveFear() {
   var mathyOne = [];
@@ -483,7 +479,7 @@ function maleAveFear() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveHappiness() {
   var mathyOne = [];
@@ -498,7 +494,7 @@ function maleAveHappiness() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveNeutral() {
   var mathyOne = [];
@@ -513,7 +509,7 @@ function maleAveNeutral() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveSadness() {
   var mathyOne = [];
@@ -528,7 +524,7 @@ function maleAveSadness() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 function maleAveSurprise() {
   var mathyOne = [];
@@ -543,7 +539,7 @@ function maleAveSurprise() {
     var result = total / mathyOne.length
   }
   return (result);
-}
+};
 
 
 // BY POLITICAL PARTY
@@ -560,8 +556,8 @@ function democratAnger() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function democratContempt() {
   var mathyOne = [];
@@ -576,7 +572,7 @@ function democratContempt() {
     var result = total / mathyOne.length
   }
   return result
-}
+};
 
 function democratDisgust() {
   var mathyOne = [];
@@ -591,7 +587,7 @@ function democratDisgust() {
     var result = total / mathyOne.length
   }
   return result
-}
+};
 
 function democratFear() {
   var mathyOne = [];
@@ -606,7 +602,7 @@ function democratFear() {
     var result = total / mathyOne.length
   }
   return result
-}
+};
 
 function democratHappiness() {
   var mathyOne = [];
@@ -621,7 +617,7 @@ function democratHappiness() {
     var result = total / mathyOne.length
   }
   return result
-}
+};
 
 function democratNeutral() {
   var mathyOne = [];
@@ -636,7 +632,7 @@ function democratNeutral() {
     var result = total / mathyOne.length
   }
   return result
-}
+};
 
 function democratSadness() {
   var mathyOne = [];
@@ -650,8 +646,8 @@ function democratSadness() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function democratSurprise() {
   var mathyOne = [];
@@ -665,8 +661,8 @@ function democratSurprise() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanAnger() {
   var mathyOne = [];
@@ -680,8 +676,8 @@ function republicanAnger() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanContempt() {
   var mathyOne = [];
@@ -695,8 +691,8 @@ function republicanContempt() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanDisgust() {
   var mathyOne = [];
@@ -710,8 +706,8 @@ function republicanDisgust() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanFear() {
   var mathyOne = [];
@@ -725,8 +721,8 @@ function republicanFear() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanHappiness() {
   var mathyOne = [];
@@ -740,8 +736,8 @@ function republicanHappiness() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanNeutral() {
   var mathyOne = [];
@@ -755,8 +751,8 @@ function republicanNeutral() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanSadness() {
   var mathyOne = [];
@@ -770,8 +766,8 @@ function republicanSadness() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function republicanSurprise() {
   var mathyOne = [];
@@ -785,8 +781,8 @@ function republicanSurprise() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentAnger() {
   var mathyOne = [];
@@ -800,8 +796,8 @@ function independentAnger() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentContempt() {
   var mathyOne = [];
@@ -815,8 +811,8 @@ function independentContempt() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentDisgust() {
   var mathyOne = [];
@@ -830,8 +826,8 @@ function independentDisgust() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentFear() {
   var mathyOne = [];
@@ -845,8 +841,8 @@ function independentFear() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentHappiness() {
   var mathyOne = [];
@@ -860,8 +856,8 @@ function independentHappiness() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentNeutral() {
   var mathyOne = [];
@@ -875,8 +871,8 @@ function independentNeutral() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentSadness() {
   var mathyOne = [];
@@ -890,8 +886,8 @@ function independentSadness() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 function independentSurprise() {
   var mathyOne = [];
@@ -905,8 +901,8 @@ function independentSurprise() {
     }
     var result = total / mathyOne.length
   }
-  return result
-}
+  return result;
+};
 
 
 
@@ -928,7 +924,8 @@ Array.prototype.sortBy = function(emotionA) {
     return (a[emotionA] > b[emotionA]) ? 1 : (a[emotionA] < b[emotionA]) ? -1 : 0;
   });
   //Push congressman data to Firebase DB
-  dataRef.ref().child('Congressman').push(mainObject)
+  // dataRef.ref().child('Congressman').push(mainObject)
+};
 
 
 
@@ -941,7 +938,7 @@ happinessLowestToHighest.push(congressman.sortBy('happiness'));
 neutralLowestToHighest.push(congressman.sortBy('neutral'));
 sadnessLowestToHighest.push(congressman.sortBy('sadness'));
 surpriseLowestToHighest.push(congressman.sortBy('surprise'));
-console.log(angerLowestToHighest)
+// console.log(angerLowestToHighest)
 //console.log(contemptLowestToHighest)
 //console.log(happinessLowestToHighest)
 //console.log(sadnessLowestToHighest)
@@ -955,7 +952,7 @@ function angerSort(a, b) {
   return 0;
 }
 
-console.log(congressman.sortBy(angerSort).reverse());
+// console.log(congressman.sortBy(angerSort).reverse());
 //console.log(congressman.sort(angerSort));
 
 
