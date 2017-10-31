@@ -7,8 +7,6 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    </head>
-
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- Animate CSS-->
@@ -20,124 +18,133 @@
         <script src="https://use.fontawesome.com/f9df423f4a.js"></script>
         <!-- Google fonts  -->
         <link href="https://fonts.googleapis.com/css?family=Palanquin|Roboto" rel="stylesheet">
+        <script src="assets/waypoints/lib/noframework.waypoints.min.js"></script>
+        <script type="text/javascript">
+            var waypoint = new Waypoint({
+              element: document.getElementById('number-offset'),
+              handler: function(direction) {
+                notify('25px from top')
+              },
+              offset: 25
+            })
+        </script>
     </head>
     <body>
         <!-- top nav -->
         <div class="container-fluid fixed-top" id="topNav">
-                        <div class="row">
-              <nav class="nav">
-                  <div class="pos-f-t">
-                    <div class="collapse" id="navbarToggleExternalContent">
-                      <div class="bg-secondary p-4">
-                          <a href="explore.html"><h4 class="text-white">Explore</h4></a>    
-                          <a href="sources.html"><h4 class="text-white">Sources</h4></a>
-                          <a href="aboutus.html"><h4 class="text-white">About Us</h4></a>
-                        <!-- <span class="text-muted">Toggleable via the navbar brand.</span>
-                        <span class="text-muted">Toggleable via the navbar brand.</span> -->
-                      </div>
+            <div class="row">
+                <nav class="nav">
+                    <div class="pos-f-t">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-secondary p-4">
+                        <a href="explore.html"><h4 class="text-white">Explore</h4></a>    
+                        <a href="sources.html"><h4 class="text-white">Sources</h4></a>
+                        <a href="aboutus.html"><h4 class="text-white">About Us</h4>
+                          </a>
+                        </div>
                     </div>
                     <nav class="navbar navbar-dark bg-secondary">
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                      </button>
+                        </button>
                     </nav>
                   </div>
-              </nav>
+                </nav>
             </div>
         </div>
         <!-- logo top header -->
         <div class="container" id="searchSection">
-            <h1 class="text-center">
-                <div class="row">
-                    <div class="col-12" id="logo">
-                        <i class="fa fa-user-o" aria-hidden="true"></i> Polify
+            <div class="row">
+                <div class="col-12 text-center" id="logo">
+                    <i class="fa fa-user-o" aria-hidden="true"></i> 
+                    <h1 id="logo" id="number-offset">Polify</h1>
+                </div>
+            </div>
+            <!-- search box -->
+            <div class="row justify-content-md-center" id="searchBox">
+                <div class="col-12 text-center">
+                    <p>Start typing to begin your search. Press tab or enter to autocomplete.</p>
+                </div>
+                <div class="col-8">    
+                    <div class="input-group" id="search-container">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2" id="result">
+
+                        <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2" id="search-bar">
+
+                        <button class="input-group-addon btn btn-secondary basic-addon2" type="text" id="submit-btn">
+                        Go!</button>
                     </div>
                 </div>
-
-                <div class="row" id="select-section">
-                    <div class="col-4">
-                    </div>    
-                    <div class="col-4">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2">
-                            <button class="input-group-addon btn btn-secondary" type="button" id="submit basic-addon2">
-                            Go!</button>
-                        </div>
-                    </div>  
-                      
-                </div>
-                    <div class="col-4">
-                    </div> 
-                </div>
+            </div>       
         </div>
+
         <!-- charts -->
         <div class="container-fluid" id="mainContentSection">
             <!-- first row of charts -->
             <div class="row text-center firstRow">
                 <div class="col-4">
-                    <a href=""><img src="http://via.placeholder.com/200x200">
+                    <a href="#"><img src="http://via.placeholder.com/200x200">
                     </a>
                     <h6 class="mainChartText">Rankings between Democrats and Republicans showing emotions</h6>
                 </div>
                 <div class="col-4">
-                    <a href=""><img src="http://via.placeholder.com/200x200"></a>
-                    <h6 class="mainChartText">Pie Graph showing overall percentage of disgust in females versus males</h6>
-                    
+                    <a href="#"><img src="http://via.placeholder.com/200x200"></a>
+                    <h6 class="mainChartText">Pie Graph showing overall percentage of disgust in females versus males</h6>     
                 </div>
                 <div class="col-4">
-                    <a href=""><img src="http://via.placeholder.com/200x200"></a>
+                    <a href="#"><img src="http://via.placeholder.com/200x200"></a>
                     <h6 class="mainChartText">Heatmap of each state showing average happiness levels of all politicians</h6>
                 </div>
-
             </div>
             <!-- second row  of charts-->
             <div class="row text-center secondRow">
                 <div class="col-4">
-                    <a href=""><img src="http://via.placeholder.com/200x200"></a>
+                    <a href="#"><img src="http://via.placeholder.com/200x200"></a>
                     <h6 class="mainChartText">Scatterplot/Bubblechart illustrating average levels of sadness versus average levels of fear of all politicians</h6>
                 </div>
                 <div class="col-4">
-                    <a href=""><img src="http://via.placeholder.com/200x200"></a>
+                    <a href="#"><img src="http://via.placeholder.com/200x200"></a>
                     <h6 class="mainChartText">Donut chart of all attributes aggregated - what’s the main emotion of our collective congressman</h6>
                 </div>
                 <div class="col-4">
-                    <a href=""><img src="http://via.placeholder.com/200x200"></a>
+                    <a href="#"><img src="http://via.placeholder.com/200x200"></a>
                     <h6 class="mainChartText">Something rad</h6>
                 </div>
-
-            </div>
-            
+            </div>         
         </div>
         <!-- footer -->
-        <div class="container-fluid text-center" id="footer">
-            <div class="row">
-                <div class="col-12" id="footer-links">
-                    <div>
-                      <ul class="d-inline-block"><h4>Explore</h4>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-6 d-flex align-items-start" id="footer-links">
+                        <ul class="d-inline-block"><h4>Explore</h4>
                         <li><a href="#">Chart 1 interactive</a></li>
                         <li><a href="#">Chart 2 interactive</a></li>
                         <li><a href="#">Chart 3 interactive</a></li>
-                      </ul>
-                      <ul class="d-inline-block"><h4>Sources</h4>
+                        </ul>
+                        <ul class="d-inline-block"><h4>Sources</h4>
                         <li><a href="https://developer.twitter.com/en/docs" target="_blank">Twitter API</a></li>
                         <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/emotion/" target="_blank">Azure Microsoft API</a></li>
                         <li><a href="https://github.com/jublonet/codebird-js" target="_blank">Codebird - JS</a></li>
-                      </ul>
-                      <ul class="d-inline-block"><h4>About</h4>
+                        </ul>
+                        <ul class="d-inline-block"><h4>About</h4>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="contactus.html">Contact Us</a></li>
                       </ul>
                     </div>
-                </div>           
-            </div>
-        </div>
+                </div>
+            </div>           
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <!-- codebird -->
     <script src="assets/js/codebird.js" type="text/javascript"></script>
+    <!-- js -->
     <script src="assets/js/app.js" type="text/javascript"></script>
 </body>
         

@@ -15,11 +15,16 @@ ul {
 	list-style-type: none; 	
 }
 
+a, a:hover, a:focus {
+	text-decoration: none;
+	color: black;
+}
+
 #topNav {
 	height: 57px;
 	background: #EBEDEF;
 	position: fixed;
-	top:0;
+	top: 0;
 }
 
 #topNavP {
@@ -29,8 +34,6 @@ ul {
 	top:0;
 	z-index: 99;	
 }
-
-
 
 #subHeader {
 	letter-spacing: 5px;
@@ -65,6 +68,7 @@ ul {
   padding-top: 15px;
 }
 
+/* search section */
 #searchSection {
 	margin-top: 100px;
 	margin-bottom: 80px;
@@ -75,16 +79,23 @@ ul {
 	font-weight: bolder;
 	letter-spacing: 5px;
 	margin-bottom: 30px;
+	display: inline;
 }
 
-#select-section {
+/* search box section */
+#searchBox {
 	margin-bottom: 40px;
 }
 
-#selectDropDown {
-	width: 400px;
+#result {
+	display: none;
 }
 
+#search-container {
+
+}
+
+/* index page - main content */
 #mainContentSection {
 	padding-top: 20px;
 	background-color: #eff0f2;
@@ -99,18 +110,50 @@ ul {
 	margin-top: 20px;
 }
 
+/* index page - main content text*/
 .mainChartText {
 	color: grey;
 	padding-top: 10px;
 
 }
 
+/* aboutus page */
+#aboutUsSection {
+	margin-left: 180px;
+	padding-top: 100px;
+	margin-bottom: 80px;
+
+}
+
+.aboutUsRow {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-left: 20px;
+}
+
+.devBio {
+	width: 100px;
+	height: 100px;
+}
+
+.aboutUsText {
+}
+
+#sources {
+	margin-left: 180px;
+	margin-top: 100px;
+}
+
+.api {
+	margin-top: 50px;
+}
+
 /* politician page */
 #politicianPageMain {
 	margin-top: 100px;
 }
-/* politician photo */
 
+/* politician photo */
 #politicianBioImage {
 	width: 200px;
 	height: 200px;
@@ -120,47 +163,34 @@ ul {
 	margin-left: 50px;
 }
 
+/* styles each row in div*/
 .tableRankRow {
 	margin: 10px;	
 }
 
+/* politician photo */
 .emotionIcon {
 	width: 30px; 
 	height: 30px;
 }
 
-
+/* politician text next to photo */
 .emotionText {
 	margin-left: 20px;
 	margin-right: 10px;
-}
-
-#twitterIcon {
-	color: #00aced;
 }
 
 #twitterDiv {
 	margin-bottom: 20px;
 }
 
+#twitterIcon {
+	color: #00aced;
+}
 
-/* global footers */
-
+/* general footer */
 #footer {
 	margin-top: 40px;
-}
-
-#footerP {
-	margin-top: 40px;
-	position: fixed;
-	left: 300px;
-	text-decoration: none;
-	color: #a3a3a;
-}
-
-#footerP a, a:hover, a:focus {
-	text-decoration: none;
-	color: #a3a3a3;
 }
 
 #footer a, a:hover, a:focus {
@@ -168,9 +198,14 @@ ul {
 	color: #a3a3a3;
 }
 
-
-#footer-links ul {
-	vertical-align: top;
+.footerOther {
+	padding-top: 40px;
+	background-color: #EBEDEF;
 }
+
+
+
+
+
 
 
