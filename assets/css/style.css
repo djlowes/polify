@@ -1,0 +1,219 @@
+body  {
+	margin: 0 auto;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Palanquin', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#topNav {
+	height: 57px;
+	background: #EBEDEF;
+	position: fixed;
+	top:0;
+}
+
+#topNavP {
+	height: 57px;
+	background: #EBEDEF;
+	position: fixed;
+	top:0;
+	z-index: 99;
+}
+
+
+
+#subHeader {
+	letter-spacing: 5px;
+	font-size: 30px;
+	position: fixed;
+	left: 500px;
+}
+
+.add-on .input-group-btn > .btn {
+  border-left-width: 0;
+/*  left: -2px;*/
+  -webkit-box-shadow: inset 0 1px 1px
+  rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px
+  rgba(0, 0, 0, 0.075);
+}
+
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow: none;
+ -webkit-box-shadow: none;
+ border-color: #cccccc;
+}
+
+.form-control {
+	width:20%;
+}
+
+.navbar-nav > li > a {
+  border-right: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#searchSection {
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+
+#logo {
+	font-size: 80px;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+
+#select-section {
+	margin-bottom: 40px;
+}
+
+#selectDropDown {
+	width: 400px;
+}
+
+#mainContentSection {
+	padding-top: 20px;
+	background-color: #eff0f2;
+	height: 700px;
+}
+
+.firstRow {
+	margin-top: 50px;
+}
+
+.secondRow {
+	margin-top: 20px;
+}
+
+.mainChartText {
+	color: grey;
+	padding-top: 10px;
+
+}
+
+/* politician page */
+#politicianPageMain {
+	margin-top: 100px;
+}
+/* politician photo */
+
+#politicianBioImage {
+/*	width: 200px;
+	height: 200px;
+*/
+	width: 100%;
+}
+
+#politicianTableRank {
+	margin-left: 50px;
+}
+
+.tableRankRow {
+	margin: 10px;
+}
+
+.emotionIcon {
+	width: 30px;
+	height: 30px;
+}
+
+
+.emotionText {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+#twitterIcon {
+	color: #00aced;
+}
+
+#twitterDiv {
+	margin-bottom: 20px;
+}
+
+
+/* global footers */
+
+#footer {
+	margin-top: 40px;
+}
+
+#footerP {
+	margin-top: 40px;
+	position: fixed;
+	left: 300px;
+	text-decoration: none;
+	color: #a3a3a;
+}
+
+#footerP a, a:hover, a:focus {
+	text-decoration: none;
+	color: #a3a3a3;
+}
+
+#footer a, a:hover, a:focus {
+	text-decoration: none;
+	color: #a3a3a3;
+}
+
+
+#footer-links ul {
+	vertical-align: top;
+}
+
+
+#search-container {
+  position: absolute;
+/*  margin-left: -120px;
+  top: 120px;
+  left: 50%;*/
+}
+
+#result, #search-bar {
+  text-rendering: optimizelegibility;
+  width: 240px;
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 2px;
+  outline: none;
+  letter-spacing: 0.6px;
+}
+
+#search-bar {
+  border: 1px solid transparent;
+  position: absolute;
+  background: transparent;
+  color: #666;
+  top: 0;
+}
+
+#result {
+  border: 1px solid #999;
+  color: #bebebe;
+}
+
+#myChartFour {
+  width:100%;
+  height: 500px;
+}
+
+#chart-container {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
