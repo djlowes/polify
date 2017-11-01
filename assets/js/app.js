@@ -12954,66 +12954,66 @@ function WY() {
 // //INSERT CHARTS BELOW
 
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
-    datasets: [{
-      label: 'Males',
-      backgroundColor: 'rgba(54, 162, 235, 1)',
-      data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt()],
-    }, {
-      label: 'Females',
-      backgroundColor: 'rgba(255,99,132,1)',
-      data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
-    }]
-  }
-});
+// var ctx = document.getElementById("myChart");
+// var myChart = new Chart(ctx, {
+//   type: 'bar',
+//   data: {
+//     labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+//     datasets: [{
+//       label: 'Males',
+//       backgroundColor: 'rgba(54, 162, 235, 1)',
+//       data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt()],
+//     }, {
+//       label: 'Females',
+//       backgroundColor: 'rgba(255,99,132,1)',
+//       data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
+//     }]
+//   }
+// });
 
-var labels = {
-  "Males": true,
-  "Females": true
-};
-
-var ctxTwo = document.getElementById("myChartTwo");
-var myChartTwo = new Chart(ctxTwo, {
-  type: 'bar',
-  data: {
-    labels: ["Males", "Females"],
-    datasets: [{
-      label: 'Fear - males vs females',
-      data: [maleAveContempt(), femaleAveContempt()],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }]
-    }
-  }
-
-});
+// var labels = {
+//   "Males": true,
+//   "Females": true
+// };
+//
+// var ctxTwo = document.getElementById("myChartTwo");
+// var myChartTwo = new Chart(ctxTwo, {
+//   type: 'bar',
+//   data: {
+//     labels: ["Males", "Females"],
+//     datasets: [{
+//       label: 'Fear - males vs females',
+//       data: [maleAveContempt(), femaleAveContempt()],
+//       backgroundColor: [
+//         'rgba(255, 99, 132, 0.2)',
+//         'rgba(54, 162, 235, 0.2)',
+//         'rgba(255, 206, 86, 0.2)',
+//         'rgba(75, 192, 192, 0.2)',
+//         'rgba(153, 102, 255, 0.2)',
+//         'rgba(255, 159, 64, 0.2)'
+//       ],
+//       borderColor: [
+//         'rgba(255,99,132,1)',
+//         'rgba(54, 162, 235, 1)',
+//         'rgba(255, 206, 86, 1)',
+//         'rgba(75, 192, 192, 1)',
+//         'rgba(153, 102, 255, 1)',
+//         'rgba(255, 159, 64, 1)'
+//       ],
+//       borderWidth: 1
+//     }]
+//   },
+//   options: {
+//     scales: {
+//       yAxes: [{
+//         ticks: {
+//           beginAtZero: true
+//         }
+//       }]
+//     }
+//   }
+//
+// });
 
 
 

@@ -12660,301 +12660,301 @@ console.log(surpriseHighest)
 
 
 
-
-//INSERT CHARTS BELOW
-
-var ctx = document.getElementById("myChart").getContext('2d');
-
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
-    datasets: [{
-      label: 'Males',
-      backgroundColor: "red",
-      data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt()],
-    }, {
-      label: 'Females',
-      backgroundColor: "blue",
-      data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
-    }]
-  }
-});
-
-var labels = {
-  "Males": true,
-  "Females": true
-};
-
-var ctx = document.getElementById("myChartTwo").getContext("2d");
-
-var data = {
-  labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
-  datasets: [{
-    label: "Republican",
-    backgroundColor: "red",
-    data: [republicanSurprise(), republicanSadness(), republicanFear(), republicanAnger(), republicanDisgust(), republicanContempt()]
-  }, {
-    label: "Democrat",
-    backgroundColor: "blue",
-    data: [democratSurprise(), democratSadness(), democratFear(), democratAnger(), democratDisgust(), democratContempt()]
-  }, {
-    label: "Independent",
-    backgroundColor: "green",
-    data: [independentSurprise(), independentSadness(), independentFear(), independentAnger(), independentDisgust(), independentContempt()]
-  }]
-};
-
-var myBarChart = new Chart(ctx, {
-  type: 'bar',
-  data: data,
-  options: {
-    barValueSpacing: 20,
-    scales: {
-      yAxes: [{
-        ticks: {
-          min: 0,
-        }
-      }]
-    }
-  }
-});
-
-var labels = {
-  "Republicans": true,
-  "Democrats": true
-};
-
-var ctx = document.getElementById("myChartThree").getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ["Surprise", "Sadness", "Anger", "Fear", "Disgust", "Neutral", "Contempt"],
-    datasets: [{
-      backgroundColor: [
-        "#2ecc71",
-        "#3498db",
-        "#95a5a6",
-        "#9b59b6",
-        "#f1c40f",
-        "#e74c3c",
-        "#34495e"
-      ],
-      data: [aveSurprise(), aveSadness(), aveAnger(), aveFear(), aveDisgust(), aveNeutral(), aveContempt()]
-    }]
-  }
-});
-
-var map = AmCharts.makeChart( "chartdiv", {
-  "type": "map",
-  "theme": "none",
-  "colorSteps": 20,
-
-  "dataProvider": {
-    "map": "usaLow",
-    "areas": [ {
-      "id": "US-AL",
-      "value": AL()
-    }, {
-      "id": "US-AK",
-      "value": AK()
-    }, {
-      "id": "US-AZ",
-      "value": AZ()
-    }, {
-      "id": "US-AR",
-      "value": AR()
-    }, {
-      "id": "US-CA",
-      "value": CA()
-    }, {
-      "id": "US-CO",
-      "value": CO()
-    }, {
-      "id": "US-CT",
-      "value": CT()
-    }, {
-      "id": "US-DE",
-      "value": DE()
-    }, {
-      "id": "US-FL",
-      "value": FL()
-    }, {
-      "id": "US-GA",
-      "value": GA()
-    }, {
-      "id": "US-HI",
-      "value": HI()
-    }, {
-      "id": "US-ID",
-      "value": ID()
-    }, {
-      "id": "US-IL",
-      "value": IL()
-    }, {
-      "id": "US-IN",
-      "value": IN()
-    }, {
-      "id": "US-IA",
-      "value": IA()
-    }, {
-      "id": "US-KS",
-      "value": .005
-    }, {
-      "id": "US-KY",
-      "value": KY()
-    }, {
-      "id": "US-LA",
-      "value": LA()
-    }, {
-      "id": "US-ME",
-      "value": ME()
-    }, {
-      "id": "US-MD",
-      "value": MD()
-    }, {
-      "id": "US-MA",
-      "value": MA()
-    }, {
-      "id": "US-MI",
-      "value": MI()
-    }, {
-      "id": "US-MN",
-      "value": MN()
-    }, {
-      "id": "US-MS",
-      "value": MS()
-    }, {
-      "id": "US-MO",
-      "value": MO()
-    }, {
-      "id": "US-MT",
-      "value": MT()
-    }, {
-      "id": "US-NE",
-      "value": NE()
-    }, {
-      "id": "US-NV",
-      "value": NV()
-    }, {
-      "id": "US-NH",
-      "value": NH()
-    }, {
-      "id": "US-NJ",
-      "value": NJ()
-    }, {
-      "id": "US-NM",
-      "value": NM()
-    }, {
-      "id": "US-NY",
-      "value": NY()
-    }, {
-      "id": "US-NC",
-      "value": NC()
-    }, {
-      "id": "US-ND",
-      "value": ND()
-    }, {
-      "id": "US-OH",
-      "value": OH()
-    }, {
-      "id": "US-OK",
-      "value": OK()
-    }, {
-      "id": "US-OR",
-      "value": OR()
-    }, {
-      "id": "US-PA",
-      "value": PA()
-    }, {
-      "id": "US-RI",
-      "value": RI()
-    }, {
-      "id": "US-SC",
-      "value": SC()
-    }, {
-      "id": "US-SD",
-      "value": SD()
-    }, {
-      "id": "US-TN",
-      "value": TN()
-    }, {
-      "id": "US-TX",
-      "value": TX()
-    }, {
-      "id": "US-UT",
-      "value": UT()
-    }, {
-      "id": "US-VT",
-      "value": .005
-    }, {
-      "id": "US-VA",
-      "value": .009
-    }, {
-      "id": "US-WA",
-      "value": WA()
-    }, {
-      "id": "US-WV",
-      "value": WV()
-    }, {
-      "id": "US-WI",
-      "value": WI()
-    }, {
-      "id": "US-WY",
-      "value": WY()
-    } ]
-  },
-
-  "areasSettings": {
-    "autoZoom": true
-  },
-
-  "valueLegend": {
-    "right": 10,
-    "minValue": 0,
-    "maxValue": 1
-  },
-
-  "export": {
-    "enabled": true
-  }
-
-} );
-
-var ctx = document.getElementById("myChartThree");
-var myChart = new Chart(ctx, {
-  type: 'bubble',
-  data: {
-    labels: ["Males", "Females"],
-    datasets: [{
-      label: 'Contempt - males vs females',
-      data: [maleAveContempt(), femaleAveContempt()],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }]
-    }
-  }
-});
+//
+// //INSERT CHARTS BELOW
+//
+// var ctx = document.getElementById("myChart").getContext('2d');
+//
+// var myChart = new Chart(ctx, {
+//   type: 'bar',
+//   data: {
+//     labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+//     datasets: [{
+//       label: 'Males',
+//       backgroundColor: "red",
+//       data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt()],
+//     }, {
+//       label: 'Females',
+//       backgroundColor: "blue",
+//       data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
+//     }]
+//   }
+// });
+//
+// var labels = {
+//   "Males": true,
+//   "Females": true
+// };
+//
+// var ctx = document.getElementById("myChartTwo").getContext("2d");
+//
+// var data = {
+//   labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+//   datasets: [{
+//     label: "Republican",
+//     backgroundColor: "red",
+//     data: [republicanSurprise(), republicanSadness(), republicanFear(), republicanAnger(), republicanDisgust(), republicanContempt()]
+//   }, {
+//     label: "Democrat",
+//     backgroundColor: "blue",
+//     data: [democratSurprise(), democratSadness(), democratFear(), democratAnger(), democratDisgust(), democratContempt()]
+//   }, {
+//     label: "Independent",
+//     backgroundColor: "green",
+//     data: [independentSurprise(), independentSadness(), independentFear(), independentAnger(), independentDisgust(), independentContempt()]
+//   }]
+// };
+//
+// var myBarChart = new Chart(ctx, {
+//   type: 'bar',
+//   data: data,
+//   options: {
+//     barValueSpacing: 20,
+//     scales: {
+//       yAxes: [{
+//         ticks: {
+//           min: 0,
+//         }
+//       }]
+//     }
+//   }
+// });
+//
+// var labels = {
+//   "Republicans": true,
+//   "Democrats": true
+// };
+//
+// var ctx = document.getElementById("myChartThree").getContext('2d');
+// var myChart = new Chart(ctx, {
+//   type: 'doughnut',
+//   data: {
+//     labels: ["Surprise", "Sadness", "Anger", "Fear", "Disgust", "Neutral", "Contempt"],
+//     datasets: [{
+//       backgroundColor: [
+//         "#2ecc71",
+//         "#3498db",
+//         "#95a5a6",
+//         "#9b59b6",
+//         "#f1c40f",
+//         "#e74c3c",
+//         "#34495e"
+//       ],
+//       data: [aveSurprise(), aveSadness(), aveAnger(), aveFear(), aveDisgust(), aveNeutral(), aveContempt()]
+//     }]
+//   }
+// });
+//
+// var map = AmCharts.makeChart( "chartdiv", {
+//   "type": "map",
+//   "theme": "none",
+//   "colorSteps": 20,
+//
+//   "dataProvider": {
+//     "map": "usaLow",
+//     "areas": [ {
+//       "id": "US-AL",
+//       "value": AL()
+//     }, {
+//       "id": "US-AK",
+//       "value": AK()
+//     }, {
+//       "id": "US-AZ",
+//       "value": AZ()
+//     }, {
+//       "id": "US-AR",
+//       "value": AR()
+//     }, {
+//       "id": "US-CA",
+//       "value": CA()
+//     }, {
+//       "id": "US-CO",
+//       "value": CO()
+//     }, {
+//       "id": "US-CT",
+//       "value": CT()
+//     }, {
+//       "id": "US-DE",
+//       "value": DE()
+//     }, {
+//       "id": "US-FL",
+//       "value": FL()
+//     }, {
+//       "id": "US-GA",
+//       "value": GA()
+//     }, {
+//       "id": "US-HI",
+//       "value": HI()
+//     }, {
+//       "id": "US-ID",
+//       "value": ID()
+//     }, {
+//       "id": "US-IL",
+//       "value": IL()
+//     }, {
+//       "id": "US-IN",
+//       "value": IN()
+//     }, {
+//       "id": "US-IA",
+//       "value": IA()
+//     }, {
+//       "id": "US-KS",
+//       "value": .005
+//     }, {
+//       "id": "US-KY",
+//       "value": KY()
+//     }, {
+//       "id": "US-LA",
+//       "value": LA()
+//     }, {
+//       "id": "US-ME",
+//       "value": ME()
+//     }, {
+//       "id": "US-MD",
+//       "value": MD()
+//     }, {
+//       "id": "US-MA",
+//       "value": MA()
+//     }, {
+//       "id": "US-MI",
+//       "value": MI()
+//     }, {
+//       "id": "US-MN",
+//       "value": MN()
+//     }, {
+//       "id": "US-MS",
+//       "value": MS()
+//     }, {
+//       "id": "US-MO",
+//       "value": MO()
+//     }, {
+//       "id": "US-MT",
+//       "value": MT()
+//     }, {
+//       "id": "US-NE",
+//       "value": NE()
+//     }, {
+//       "id": "US-NV",
+//       "value": NV()
+//     }, {
+//       "id": "US-NH",
+//       "value": NH()
+//     }, {
+//       "id": "US-NJ",
+//       "value": NJ()
+//     }, {
+//       "id": "US-NM",
+//       "value": NM()
+//     }, {
+//       "id": "US-NY",
+//       "value": NY()
+//     }, {
+//       "id": "US-NC",
+//       "value": NC()
+//     }, {
+//       "id": "US-ND",
+//       "value": ND()
+//     }, {
+//       "id": "US-OH",
+//       "value": OH()
+//     }, {
+//       "id": "US-OK",
+//       "value": OK()
+//     }, {
+//       "id": "US-OR",
+//       "value": OR()
+//     }, {
+//       "id": "US-PA",
+//       "value": PA()
+//     }, {
+//       "id": "US-RI",
+//       "value": RI()
+//     }, {
+//       "id": "US-SC",
+//       "value": SC()
+//     }, {
+//       "id": "US-SD",
+//       "value": SD()
+//     }, {
+//       "id": "US-TN",
+//       "value": TN()
+//     }, {
+//       "id": "US-TX",
+//       "value": TX()
+//     }, {
+//       "id": "US-UT",
+//       "value": UT()
+//     }, {
+//       "id": "US-VT",
+//       "value": .005
+//     }, {
+//       "id": "US-VA",
+//       "value": .009
+//     }, {
+//       "id": "US-WA",
+//       "value": WA()
+//     }, {
+//       "id": "US-WV",
+//       "value": WV()
+//     }, {
+//       "id": "US-WI",
+//       "value": WI()
+//     }, {
+//       "id": "US-WY",
+//       "value": WY()
+//     } ]
+//   },
+//
+//   "areasSettings": {
+//     "autoZoom": true
+//   },
+//
+//   "valueLegend": {
+//     "right": 10,
+//     "minValue": 0,
+//     "maxValue": 1
+//   },
+//
+//   "export": {
+//     "enabled": true
+//   }
+//
+// } );
+//
+// var ctx = document.getElementById("myChartThree");
+// var myChart = new Chart(ctx, {
+//   type: 'bubble',
+//   data: {
+//     labels: ["Males", "Females"],
+//     datasets: [{
+//       label: 'Contempt - males vs females',
+//       data: [maleAveContempt(), femaleAveContempt()],
+//       backgroundColor: [
+//         'rgba(255, 99, 132, 0.2)',
+//         'rgba(54, 162, 235, 0.2)',
+//         'rgba(255, 206, 86, 0.2)',
+//         'rgba(75, 192, 192, 0.2)',
+//         'rgba(153, 102, 255, 0.2)',
+//         'rgba(255, 159, 64, 0.2)'
+//       ],
+//       borderColor: [
+//         'rgba(255,99,132,1)',
+//         'rgba(54, 162, 235, 1)',
+//         'rgba(255, 206, 86, 1)',
+//         'rgba(75, 192, 192, 1)',
+//         'rgba(153, 102, 255, 1)',
+//         'rgba(255, 159, 64, 1)'
+//       ],
+//       borderWidth: 1
+//     }]
+//   },
+//   options: {
+//     scales: {
+//       yAxes: [{
+//         ticks: {
+//           beginAtZero: true
+//         }
+//       }]
+//     }
+//   }
+// });
