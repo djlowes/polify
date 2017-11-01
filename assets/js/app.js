@@ -13401,7 +13401,7 @@ var ctxThree = document.getElementById("myChartSix").getContext('2d');
 var myChartThree = new Chart(ctxThree, {
   type: 'pie',
   data: {
-    labels: ["Republican", "Democrat", "Independent"],
+    labels: ["Republican Sadness", "Democrat Sadness", "Independent Sdaness"],
     datasets: [{
       backgroundColor: [
         "#803123",
