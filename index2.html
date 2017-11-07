@@ -55,9 +55,41 @@
         <div class="intro-search">
           <div class="input-group" id="search-container">
             <input type="text" class="form-control" placeholder="Type in the name of a politician to search" aria-label="search" aria-describedby="basic-addon2" id="result">
-            <button class="input-group-addon btn btn-secondary basic-addon2" type="button" id="submit-btn">Search</button>
+            <button class="input-group-addon btn btn-secondary basic-addon2" type="button" id="submit-btn" data-toggle="modal" data-target="#myModal">Search</button>
           </div>
         </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">Text</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">Politician <small>USA</small></h3>
+                    <span><strong>Emotions </strong></span>
+                        <span class="label label-warning">Anger</span>
+                        <span class="label label-info">Contempt</span>
+                        <span class="label label-info">Disgust</span>
+                        <span class="label label-success">Happiness</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
         <h3>OR</h3>
         <div class="intro-text">See what politician you look like the most!<b> Compare using:</b></div>
         <hr class="intro-divider">
