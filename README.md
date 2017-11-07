@@ -1,87 +1,36 @@
-# Project Title
+# Polify
 
-One Paragraph of project description goes here
+https://github.com/djlowes/polify
 
-## Getting Started
+Polify is a web application that allows users to search and gather data on individual members of congress. It displays information, such as recent twitter feed, an image of the individual, as well as a list of emotional attributes. Polify also ranks of each member of congress based on a certain emotional attribute. The main page displays charts that allow users to visualize and compare the values of emotional attributes based on the individual's gender, party, or state. 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Application use
 
-### Prerequisites
+Users will search for an individual member of congress by typing their name in the search bar. After clicking "Go", Polify will then display the results on another page. This will include an image, specific values for emotions, and recent twitter posts from that individual. 
 
-What things you need to install the software and how to install them
+![test](https://user-images.githubusercontent.com/31169025/32260636-5a6c5cb8-be86-11e7-966b-8a0473c845b0.png)
+![result](https://user-images.githubusercontent.com/31169025/32260673-9ce26b5a-be86-11e7-8a01-3b3ae9c1488e.png)
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Clicking on the Polify logo will bring the user back to the home page to allow for a new search.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Azure](https://azure.microsoft.com/en-us/) - Emotion API
+* [Twitter](https://developer.twitter.com/en/docs) - Twitter API
+* [Chart.js](http://www.chartjs.org/) - Used to generate charts
+* [amCharts](https://www.amcharts.com/) - Used to generate charts 
+* [math.js](http://mathjs.org/docs/index.html)
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+David Lowes, Peter Wu, Melanie Wilson, JP Alexandre de Oliveira
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* David Hallinan
+* Marco Chan
+* Abraham Ferguson
