@@ -12958,3 +12958,16 @@ console.log(surpriseHighest)
 //     }
 //   }
 // });
+
+appendImages();
+
+function appendImages () {
+  for (i=0; i<congressman.length; i++) {
+    var img = document.createElement("img");
+    img.height = 50;
+    img.width = 50;
+    var src = document.getElementById("faces");
+    img.src = congressman[i].image;
+    src.appendChild(img);
+  }
+}
