@@ -1,0 +1,29 @@
+{
+  "name": "polify",
+  "version": "1.0.0",
+  "description": "Emotional rankings for current US Congressman using facial recognition technology",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djlowes/polify.git"
+  },
+  "keywords": [
+    "AI",
+    "Facial",
+    "Recognition",
+    "Politicans",
+    "Faces"
+  ],
+  "author": "David Lowes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djlowes/polify/issues"
+  },
+  "homepage": "https://github.com/djlowes/polify#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}

@@ -1,4 +1,4 @@
-//Firebase general config
+//Firebase general config - OBSOLETE
 var config = {
   apiKey: "AIzaSyAH498q5xfRdRITk_-cg4OlD50_4zRz5SU",
   authDomain: "jproject-f5600.firebaseapp.com",
@@ -8,13 +8,11 @@ var config = {
   messagingSenderId: "410141371595"
 };
 
-//Initialize Firebase
+//Initialize Firebase - OBSOLETE
 firebase.initializeApp(config);
 var dataRef = firebase.database();
 
-//Master object which will contain every congressman
 var mainObject = [];
-//Master object which will contain emotional ranking in index order (NOT FINISHED)
 var mainObjectTwo = [];
 
 //Ajax call to Govtrack to push into master object
@@ -31,7 +29,7 @@ $.ajax({
     arr = people[i].person.link;
     var slicy = arr.slice(-6)
     var imageURL = "https://www.govtrack.us/data/photos/" + slicy + ".jpeg"
-    // Push all relevant information to array
+    // Push to array
     fName = people[i].person.firstname;
     lName = people[i].person.lastname;
     party = people[i].party;
@@ -43,7 +41,6 @@ $.ajax({
     youTubeID = people[i].person.youtubeid;
     roleType = people[i].role_type_label;
     state = people[i].state;
-    // Push 541 entries to main object (can minimize this code)
     mainObject.push({
       firstName: fName,
       lastName: lName,
@@ -74,10 +71,8 @@ $.ajax({
         },
         type: "POST",
         data: `{"url": "${getImage}"}`,
-        //Push response data (emotion rankings) to Firebase DB
       }).done(function(data) {
         mainObjectTwo.push(data)
-        // CAN TRY AND JSON.PARSE and JSON.STRINGIFY INTO A NEW OBJECT OR MAIN.JSON FILE
         var emotion = data[0].scores;
         console.log(JSON.stringify(emotion));
         //localStorage.setItem(19, JSON.stringify(emotion));
