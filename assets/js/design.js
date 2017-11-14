@@ -11601,243 +11601,227 @@ function democratSurprise() {
 }
 
 function republicanAnger() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanContempt() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].contempt))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanDisgust() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].disgust))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanFear() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].fear))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanHappiness() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].happiness))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanNeutral() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].neutral))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanSadness() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].sadness))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function republicanSurprise() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Republican") {
-      mathyOne.push(math.sum(congressman[i].surprise))
+    if (congressman[i].party == "Republican") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentAnger() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentContempt() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].contempt))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentDisgust() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].disgust))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentFear() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].fear))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentHappiness() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].happiness))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentNeutral() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].neutral))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentSadness() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].sadness))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function independentSurprise() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].party === "Independent") {
-      mathyOne.push(math.sum(congressman[i].surprise))
+    if (congressman[i].party == "Independent") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 
@@ -11847,756 +11831,704 @@ function independentSurprise() {
 
 //STATES, FOR HEATMAP
 
-//Angriest
-
 function AL() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "AL") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "AL") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function AK() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "AK") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "AK") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function AZ() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "AZ") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "AZ") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function AR() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "AR") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "AR") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function CA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "CA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "CA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function CO() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "CO") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "CO") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function CT() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "CT") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "CT") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function DE() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "DE") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "DE") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function FL() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "FL") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "FL") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function GA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "GA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "GA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function HI() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "HI") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "HI") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function ID() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "ID") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "ID") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function IL() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "IL") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "IL") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function IN() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "IN") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "IN") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function IA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "IA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "IA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function KS() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "KS") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "KS") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function KY() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "KY") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "KY") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function LA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "LA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "LA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function ME() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "ME") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "ME") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MD() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MD") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MD") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MI() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MI") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MI") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MN() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MN") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MN") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MS() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MS") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MS") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MO() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MO") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MO") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function MT() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "MT") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "MT") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NE() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NE") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NE") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NV() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NV") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NV") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NH() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NH") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NH") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NJ() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NJ") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NJ") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NM() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NM") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NM") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NY() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NY") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NY") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function NC() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "NC") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "NC") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function ND() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "ND") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "ND") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function OH() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "OH") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "OH") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function OK() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "OK") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "OK") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function OR() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "OR") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "OR") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function PA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "PA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "PA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function RI() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "RI") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "RI") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function SC() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "SC") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "SC") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function SD() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "SD") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "SD") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function TN() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "TN") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "TN") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function TX() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "TX") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "TX") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function UT() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "UT") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "UT") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function VT() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "VT") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "VT") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function VA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "VA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "VA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function WA() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "WA") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "WA") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function WV() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "WV") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "WV") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function WI() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "WI") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "WI") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 function WY() {
-  var mathyOne = [];
-  var total = 0;
+  var arr = [];
   for (let i = 0; i < congressman.length; i++) {
-    if (congressman[i].state === "WY") {
-      mathyOne.push(math.sum(congressman[i].anger))
+    if (congressman[i].state == "WY") {
+      arr.push(congressman[i])
     }
-    for (let j = 0; j < mathyOne.length; j++) {
-      total += mathyOne[j]
-    }
-    var result = total / mathyOne.length
   }
-  return result
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
 }
 
 
@@ -12624,105 +12556,124 @@ angerHighest.push(congressman.sortBy('anger').reverse());
 contemptHighest.push(congressman.sortBy('contempt').reverse());
 disgustHighest.push(congressman.sortBy('disgust').reverse());
 fearHighest.push(congressman.sortBy('fear').reverse());
-//happinessHighest.push(congressman.sortBy('happiness'));
+happinessHighest.push(congressman.sortBy('happiness').reverse());
 neutralHighest.push(congressman.sortBy('neutral').reverse());
 sadnessHighest.push(congressman.sortBy('sadness').reverse());
 surpriseHighest.push(congressman.sortBy('surprise').reverse());
-// console.log(surpriseHighest)
+console.log(angerHighest[0][10]);
+console.log(congressman.sortBy('anger').reverse()[10])
+
+// function angerSort(a, b) {
+//   if (a.anger < b.anger)
+//     return -1;
+//   if (a.anger > b.anger)
+//     return 1;
+//   return 0;
+// }
+
+// console.log(congressman.sortBy(angerSort).reverse());
+// console.log(congressman.sortBy(angerSort));
 
 
 
 
 
-//
-// //INSERT CHARTS BELOW
-//
-// var ctx = document.getElementById("myChart").getContext('2d');
-//
-// var myChart = new Chart(ctx, {
-//   type: 'bar',
-//   data: {
-//     labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
-//     datasets: [{
-//       label: 'Males',
-//       backgroundColor: "red",
-//       data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt()],
-//     }, {
-//       label: 'Females',
-//       backgroundColor: "blue",
-//       data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
-//     }]
-//   }
-// });
-//
-// var labels = {
-//   "Males": true,
-//   "Females": true
-// };
-//
-// var ctx = document.getElementById("myChartTwo").getContext("2d");
-//
-// var data = {
-//   labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
-//   datasets: [{
-//     label: "Republican",
-//     backgroundColor: "red",
-//     data: [republicanSurprise(), republicanSadness(), republicanFear(), republicanAnger(), republicanDisgust(), republicanContempt()]
-//   }, {
-//     label: "Democrat",
-//     backgroundColor: "blue",
-//     data: [democratSurprise(), democratSadness(), democratFear(), democratAnger(), democratDisgust(), democratContempt()]
-//   }, {
-//     label: "Independent",
-//     backgroundColor: "green",
-//     data: [independentSurprise(), independentSadness(), independentFear(), independentAnger(), independentDisgust(), independentContempt()]
-//   }]
-// };
-//
-// var myBarChart = new Chart(ctx, {
-//   type: 'bar',
-//   data: data,
-//   options: {
-//     barValueSpacing: 20,
-//     scales: {
-//       yAxes: [{
-//         ticks: {
-//           min: 0,
-//         }
-//       }]
-//     }
-//   }
-// });
-//
-// var labels = {
-//   "Republicans": true,
-//   "Democrats": true
-// };
-//
-// var ctx = document.getElementById("myChartThree").getContext('2d');
-// var myChart = new Chart(ctx, {
-//   type: 'doughnut',
-//   data: {
-//     labels: ["Surprise", "Sadness", "Anger", "Fear", "Disgust", "Neutral", "Contempt"],
-//     datasets: [{
-//       backgroundColor: [
-//         "#2ecc71",
-//         "#3498db",
-//         "#95a5a6",
-//         "#9b59b6",
-//         "#f1c40f",
-//         "#e74c3c",
-//         "#34495e"
-//       ],
-//       data: [aveSurprise(), aveSadness(), aveAnger(), aveFear(), aveDisgust(), aveNeutral(), aveContempt()]
-//     }]
-//   }
-// });
-//
-// var map = AmCharts.makeChart( "chartdiv", {
+// INSERT CHARTS BELOW
+// 1. Bar chart - Males vs Females
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt", "Happiness"],
+    datasets: [{
+      label: 'Males',
+      backgroundColor: 'rgba(54, 162, 235, 1)',
+      data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt(), maleAveHappiness()],
+    }, {
+      label: 'Females',
+      backgroundColor: 'rgba(255,99,132,1)',
+      data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt(), femaleAveHappiness()],
+    }]
+  }
+});
+var labels = {
+  "Males": true,
+  "Females": true
+};
+
+
+
+
+//2. Bar chart - Political parties
+var ctxTwo = document.getElementById("myChartTwo").getContext("2d");
+var data = {
+  labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+  datasets: [{
+    label: "Republican",
+    backgroundColor: "red",
+    data: [republicanSurprise(), republicanSadness(), republicanFear(), republicanAnger(), republicanDisgust(), republicanContempt()]
+  }, {
+    label: "Democrat",
+    backgroundColor: "blue",
+    data: [democratSurprise(), democratSadness(), democratFear(), democratAnger(), democratDisgust(), democratContempt()]
+  }, {
+    label: "Independent",
+    backgroundColor: "green",
+    data: [independentSurprise(), independentSadness(), independentFear(), independentAnger(), independentDisgust(), independentContempt()]
+  }]
+};
+var myChartTwo = new Chart(ctxTwo, {
+  type: 'bar',
+  data: data,
+  options: {
+    barValueSpacing: 20,
+    scales: {
+      yAxes: [{
+        ticks: {
+          min: 0,
+        }
+      }]
+    }
+  }
+});
+var labels = {
+  "Republicans": true,
+  "Democrats": true,
+  "Independents": true
+};
+
+
+
+
+//3. Pie Chart - all emotions
+var ctxThree = document.getElementById("myChartThree").getContext('2d');
+var myChartThree = new Chart(ctxThree, {
+  type: 'doughnut',
+  data: {
+    labels: ["Surprise", "Sadness", "Anger", "Fear", "Disgust", "Neutral", "Contempt"],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+        "#95a5a6",
+        "#9b59b6",
+        "#f1c40f",
+        "#e74c3c",
+        "#34495e"
+      ],
+      data: [aveSurprise(), aveSadness(), aveAnger(), aveFear(), aveDisgust(), aveNeutral(), aveContempt()]
+    }]
+  }
+});
+
+
+
+
+//4. Heatmap of Angriest State
+// var map = AmCharts.makeChart( "myChartFour", {
 //   "type": "map",
 //   "theme": "none",
-//   "colorSteps": 20,
+//   "colorSteps": 10,
 //
 //   "dataProvider": {
 //     "map": "usaLow",
@@ -12773,7 +12724,7 @@ surpriseHighest.push(congressman.sortBy('surprise').reverse());
 //       "value": IA()
 //     }, {
 //       "id": "US-KS",
-//       "value": .005
+//       "value": KS()
 //     }, {
 //       "id": "US-KY",
 //       "value": KY()
@@ -12860,10 +12811,10 @@ surpriseHighest.push(congressman.sortBy('surprise').reverse());
 //       "value": UT()
 //     }, {
 //       "id": "US-VT",
-//       "value": .005
+//       "value": VT()
 //     }, {
 //       "id": "US-VA",
-//       "value": .009
+//       "value": VA()
 //     }, {
 //       "id": "US-WA",
 //       "value": WA()
@@ -12894,54 +12845,221 @@ surpriseHighest.push(congressman.sortBy('surprise').reverse());
 //   }
 //
 // } );
-//
-// var ctx = document.getElementById("myChartThree");
-// var myChart = new Chart(ctx, {
-//   type: 'bubble',
-//   data: {
-//     labels: ["Males", "Females"],
-//     datasets: [{
-//       label: 'Contempt - males vs females',
-//       data: [maleAveContempt(), femaleAveContempt()],
-//       backgroundColor: [
-//         'rgba(255, 99, 132, 0.2)',
-//         'rgba(54, 162, 235, 0.2)',
-//         'rgba(255, 206, 86, 0.2)',
-//         'rgba(75, 192, 192, 0.2)',
-//         'rgba(153, 102, 255, 0.2)',
-//         'rgba(255, 159, 64, 0.2)'
-//       ],
-//       borderColor: [
-//         'rgba(255,99,132,1)',
-//         'rgba(54, 162, 235, 1)',
-//         'rgba(255, 206, 86, 1)',
-//         'rgba(75, 192, 192, 1)',
-//         'rgba(153, 102, 255, 1)',
-//         'rgba(255, 159, 64, 1)'
-//       ],
-//       borderWidth: 1
-//     }]
-//   },
-//   options: {
-//     scales: {
-//       yAxes: [{
-//         ticks: {
-//           beginAtZero: true
+
+
+//5.. Fear vs Surprise
+// new Chart(document.getElementById("myChartFive"), {
+//     type: 'bubble',
+//     data: {
+//       labels: "",
+//       datasets: [
+//         {
+//           label: ["Female Republican"],
+//           backgroundColor: "#D9B5B5",
+//           borderColor: "#5C3E3E",
+//           data: [{
+//             x: 0.4,
+//             y: 0.8,
+//             r: 24
+//           }]
+//         }, {
+//           label: ["Male Republican"],
+//           backgroundColor: "#C16E6E",
+//           borderColor: "#461010",
+//           data: [{
+//             x: 0.2,
+//             y: 0.3,
+//             r: 16
+//           }]
+//         }, {
+//           label: ["Female Democrat"],
+//           backgroundColor: "#CEE2FD",
+//           borderColor: "#495B73",
+//           data: [{
+//             x: 0.8,
+//             y: 0.8,
+//             r: 44
+//           }]
+//         }, {
+//           label: ["Male Democrat"],
+//           backgroundColor: "#93BDF7",
+//           borderColor: "#1144AB",
+//           data: [{
+//             x: 0.3,
+//             y: 0.7,
+//             r: 32
+//           }]
+//         },
+//         {
+//           label: ["Female Independent"],
+//           backgroundColor: "#C6D9B5",
+//           borderColor: "#3C6A13",
+//           data: [{
+//             x: 0.9,
+//             y: 0.9,
+//             r: 52
+//           }]
+//         },
+//         {
+//           label: ["Male Independent"],
+//           backgroundColor: "#A18DBF",
+//           borderColor: "#35136A",
+//           data: [{
+//             x: 0.4,
+//             y: 0.3,
+//             r: 28
+//           }]
 //         }
-//       }]
+//       ]
+//     },
+//     options: {
+//       title: {
+//         display: true,
+//         text: 'Relationship of fear and surprise by political party and gender'
+//       }, scales: {
+//         yAxes: [{
+//           scaleLabel: {
+//             display: true,
+//             labelString: "Surprise"
+//           }
+//         }],
+//         xAxes: [{
+//           scaleLabel: {
+//             display: true,
+//             labelString: "Fear"
+//           }
+//         }]
+//       }
 //     }
+// });
+//
+//
+//
+// //6. Pie Chart - all emotions
+// var ctxThree = document.getElementById("myChartSix").getContext('2d');
+// var myChartThree = new Chart(ctxThree, {
+//   type: 'pie',
+//   data: {
+//     labels: ["Republican Sadness", "Democrat Sadness", "Independent Sdaness"],
+//     datasets: [{
+//       backgroundColor: [
+//         "#803123",
+//         "#3F4F72",
+//         "#275F34"
+//       ],
+//       data: [republicanSadness(), democratSadness(), independentSadness()]
+//     }]
 //   }
 // });
 
-// appendImages();
-//
-// function appendImages () {
-//   for (i=0; i<congressman.length; i++) {
-//     var img = document.createElement("img");
-//     img.height = 50;
-//     img.width = 50;
-//     var src = document.getElementById("faces");
-//     img.src = congressman[i].image;
-//     src.appendChild(img);
-//   }
-// }
+$(document).ready(function() {
+
+  var $terms = [
+      'search',
+      'test',
+      'css',
+      'apple',
+      'bear',
+      'cat',
+      'crabapple',
+      'creep',
+      'czar',
+      'danger',
+      'dominant',
+      'doppler',
+      'everclear',
+      'evangelism',
+      'frodo'
+    ].sort(),
+    $return = [];
+
+  function strInArray(str, strArray) {
+    for (var j = 0; j < strArray.length; j++) {
+      if (strArray[j].match(str) && $return.length < 5) {
+        var $h = strArray[j].replace(str, '<strong>' + str + '</strong>');
+        $return.push('<li class="prediction-item"><span class="prediction-text">' + $h + '</span></li>');
+      }
+    }
+  }
+
+  function nextItem(kp) {
+    if ($('.focus').length > 0) {
+      var $next = $('.focus').next(),
+        $prev = $('.focus').prev();
+    }
+
+    if (kp == 38) { // Up
+
+      if ($('.focus').is(':first-child')) {
+        $prev = $('.prediction-item:last-child');
+      }
+
+      $('.prediction-item').removeClass('focus');
+      $prev.addClass('focus');
+
+    } else if (kp == 40) { // Down
+
+      if ($('.focus').is(':last-child')) {
+        $next = $('.prediction-item:first-child');
+      }
+
+      $('.prediction-item').removeClass('focus');
+      $next.addClass('focus');
+    }
+  }
+
+  $(function() {
+    $('#search-bar').keydown(function(e) {
+      $key = e.keyCode;
+      if ($key == 38 || $key == 40) {
+        nextItem($key);
+        return;
+      }
+
+      setTimeout(function() {
+        var $search = $('#search-bar').val();
+        $return = [];
+
+        strInArray($search, $terms);
+
+        if ($search == '' || !$('input').val) {
+          $('.output').html('').slideUp();
+        } else {
+          $('.output').html($return).slideDown();
+        }
+
+        $('.prediction-item').on('click', function() {
+          $text = $(this).find('span').text();
+          $('.output').slideUp(function() {
+            $(this).html('');
+          });
+          $('#search-bar').val($text);
+        });
+
+        $('.prediction-item:first-child').addClass('focus');
+
+      }, 50);
+    });
+  });
+
+  $('#search-bar').focus(function() {
+    if ($('.prediction-item').length > 0) {
+      $('.output').slideDown();
+    }
+
+    $('#searchform').submit(function(e) {
+      e.preventDefault();
+      $text = $('.focus').find('span').text();
+      $('.output').slideUp();
+      $('#search-bar').val($text);
+      $('input').blur();
+    });
+  });
+
+  $('#search-bar').blur(function() {
+    if ($('.prediction-item').length > 0) {
+      $('.output').slideUp();
+    }
+  });
+
+});

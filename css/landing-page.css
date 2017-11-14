@@ -132,26 +132,93 @@ body, h1, h2, h3, h4, h5, h6 {
 	top:1px;
 }
 
+/* TEST */
 
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+
+
+
+
+
+
+
+
+
+
+.output {
+  list-style: none;
+  width: 100%;
+  min-height: 0px;
+  border-top: 0 !important;
+  color: #767676;
+  font-size: .75em;
+  transition: min-height 0.2s;
+  position: absolute;
+  z-index: 5;
 }
 
-.intro-social-buttons i {
-  font-size: 80%;
+.output, #search-bar {
+  background: #fff;
+  border: 1px solid #767676;
 }
 
-#myChart {
-  width:100%;
-  height: 100px;
+.prediction-item {
+  padding: .5em .75em;
+  transition: color 0.2s, background 0.2s;
 }
 
-#myChartSix {
-  width:100%;
-  height: 200px;
+.output:hover .focus {
+  background: #fff;
+  color: #767676;
 }
+
+.prediction-item:hover, .focus,
+.output:hover .focus:hover {
+  background: #ddd;
+  color: #333;
+}
+
+.prediction-item:hover {
+  cursor: pointer;
+}
+
+.prediction-item strong { color: #333; }
+.prediction-item:hover strong { color: #000; }
+
+p { margin-top: 1em; }
+h1 { color: #439973; padding-bottom: 5px; border-bottom: 2px dotted #439973; font-family: 'Patua One'; }
+
+#submit {
+  display: block;
+  margin: .5em 0 2.5em;
+  padding: .25em .5em;
+  font-size: 1.2em;
+  color: #439973;
+  border: 1px solid #439973;
+  background: 0;
+  transition: color 0.2s, background 0.2s;
+}
+
+#submit:hover {
+  color: #fff;
+  background: #439973;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:767px) {
   .intro-message {
