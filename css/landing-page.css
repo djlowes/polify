@@ -185,24 +185,6 @@ body, h1, h2, h3, h4, h5, h6 {
 .prediction-item strong { color: #333; }
 .prediction-item:hover strong { color: #000; }
 
-p { margin-top: 1em; }
-h1 { color: #439973; padding-bottom: 5px; border-bottom: 2px dotted #439973; font-family: 'Patua One'; }
-
-#submit {
-  display: block;
-  margin: .5em 0 2.5em;
-  padding: .25em .5em;
-  font-size: 1.2em;
-  color: #439973;
-  border: 1px solid #439973;
-  background: 0;
-  transition: color 0.2s, background 0.2s;
-}
-
-#submit:hover {
-  color: #fff;
-  background: #439973;
-}
 
 
 
