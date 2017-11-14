@@ -134,8 +134,17 @@ body, h1, h2, h3, h4, h5, h6 {
 
 /* TEST */
 
+.prediction-item {
+  text-align: left;
+  border: none;
+  transition: color 0.2s, background 0.2s;
+}
 
-
+.prediction-item:hover {
+  background: #ddd;
+  color: #333;
+  cursor: pointer;
+}
 
 
 
@@ -147,7 +156,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .output {
   list-style: none;
-  width: 100%;
+  width: 50%;
   min-height: 0px;
   border-top: 0 !important;
   color: #767676;
@@ -165,6 +174,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .prediction-item {
   padding: .5em .75em;
   transition: color 0.2s, background 0.2s;
+  text-align: left;
 }
 
 .output:hover .focus {
@@ -183,7 +193,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .prediction-item strong { color: #333; }
-.prediction-item:hover strong { color: #000; }
+.prediction-item:hover strong { color: #000; }*/
 
 
 
