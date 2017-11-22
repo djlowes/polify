@@ -12953,26 +12953,13 @@ var myChartThree = new Chart(ctxThree, {
 // });
 
 $(document).ready(function() {
-
-  var $terms = [
-      'search',
-      'test',
-      'css',
-      'apple',
-      'bear',
-      'cat',
-      'crabapple',
-      'creep',
-      'czar',
-      'danger',
-      'dominant',
-      'doppler',
-      'everclear',
-      'evangelism',
-      'frodo'
-    ].sort(),
+ var termsOne = [];
+  for (var i = 0; i < congressman.length; i++) {
+    termsOne.push(congressman[i].firstName + " " + congressman[i].lastName);
+  }
+  var $terms = termsOne.sort(),
     $return = [];
-
+console.log($terms)
   function strInArray(str, strArray) {
     for (var j = 0; j < strArray.length; j++) {
       if (strArray[j].match(str) && $return.length < 5) {
@@ -13018,9 +13005,12 @@ $(document).ready(function() {
 
       setTimeout(function() {
         var $search = $('#search-bar').val();
+        if ($search) {
+        var toUpper =  $search.charAt(0).toUpperCase() + $search.slice(1);
+        }
         $return = [];
 
-        strInArray($search, $terms);
+        strInArray(toUpper, $terms);
 
         if ($search == '' || !$('input').val) {
           $('.output').html('').slideUp();
