@@ -12787,7 +12787,7 @@ var myChartThree = new Chart(ctxThree, {
 //       "value": OK()
 //     }, {
 //       "id": "US-OR",
-//       "value": OR()
+//       "value": OR()  
 //     }, {
 //       "id": "US-PA",
 //       "value": PA()

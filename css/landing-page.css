@@ -63,6 +63,10 @@ body, h1, h2, h3, h4, h5, h6 {
 
 }
 
+/*-------------------------------
+HEADER
+--------------------------------*/
+
 .intro-message>h1 {
   font-family: 'Didact Gothic', sans-serif;
   margin: 0;
@@ -132,7 +136,9 @@ body, h1, h2, h3, h4, h5, h6 {
 	top:1px;
 }
 
-/* TEST */
+/*-------------------------------
+SEARCH BAR
+--------------------------------*/
 
 .prediction-item {
   text-align: left;
@@ -145,14 +151,6 @@ body, h1, h2, h3, h4, h5, h6 {
   color: #333;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 .output {
   list-style: none;
@@ -195,21 +193,40 @@ body, h1, h2, h3, h4, h5, h6 {
 .prediction-item strong { color: #333; }
 .prediction-item:hover strong { color: #000; }*/
 
+/*-------------------------------
+MODAL
+--------------------------------*/
+.modal-body {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  flex-direction: row
+  padding: 15px
+}
+
+.modal-header {
+  padding: 15px;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem
+  color: black;
+}
+
+#myModalLabel {
+  text-align: left;
+  color: black;
+  padding: 5px;
+}
+
+#photo {
+  display: flex;
+  margin-left: 20px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*-------------------------------
+MEDIA QUERIES
+--------------------------------*/
 
 
 @media(max-width:767px) {

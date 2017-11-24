@@ -4828,34 +4828,9 @@ button.close {
   opacity: .5
 }
 
-.modal-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 15px;
-  border-bottom: 1px solid #e9ecef;
-  border-top-left-radius: .3rem;
-  border-top-right-radius: .3rem
-}
-
-.modal-header .close {
-  padding: 15px;
-  margin: -15px -15px -15px auto
-}
-
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5
-}
-
-.modal-body {
-  position: relative;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 15px
 }
 
 .modal-footer {
