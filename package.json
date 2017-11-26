@@ -29,6 +29,7 @@
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.11",
     "request": "^2.83.0",
-    "serve-favicon": "^2.4.5"
+    "serve-favicon": "^2.4.5",
+    "webpack": "^3.8.1"
   }
 }

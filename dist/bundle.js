@@ -1,4 +1,1852 @@
-export var congressman = [{
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_search_js__ = __webpack_require__(2);
+
+
+
+//--------------------------------------
+//Search.js will work when this is fixed
+//NEED TO USE WEBPACK HERE!
+//NEED TO USE WEBPACK HERE!
+//require() does not exist in the browser/client-side JavaScript
+//--------------------------------------
+
+function aveAnger() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = ((math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].anger)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function aveContempt() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = ((math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].contempt)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function aveDisgust() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = ((math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].disgust)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function aveFear() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = (math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].fear)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length;
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function aveHappiness() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = (math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].happiness)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length;
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}``
+
+function aveNeutral() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = (math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].neutral)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length;
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function aveSadness() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = (math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].sadness)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length;
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function aveSurprise() {
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    let result = (math.sum(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].surprise)) / __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length;
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+
+//BY GENDER
+
+function femaleAveAnger() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveContempt() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveDisgust() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveFear() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveHappiness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveNeutral() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveSadness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function femaleAveSurprise() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "female") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveAnger() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender === "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveContempt() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveDisgust() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveFear() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveHappiness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveNeutral() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveSadness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function maleAveSurprise() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].gender == "male") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+
+// BY POLITICAL PARTY
+
+function democratAnger() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratContempt() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratDisgust() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratFear() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratHappiness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratNeutral() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratSadness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function democratSurprise() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Democrat") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanAnger() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanContempt() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanDisgust() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanFear() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanHappiness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanNeutral() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanSadness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function republicanSurprise() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Republican") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentAnger() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentContempt() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].contempt)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentDisgust() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].disgust)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentFear() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].fear)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentHappiness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].happiness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentNeutral() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].neutral)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentSadness() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].sadness)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function independentSurprise() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].party == "Independent") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].surprise)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+
+
+
+
+
+//STATES, FOR HEATMAP
+
+function AL() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "AL") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function AK() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "AK") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function AZ() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "AZ") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function AR() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "AR") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function CA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "CA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function CO() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "CO") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function CT() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "CT") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function DE() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "DE") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function FL() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "FL") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function GA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "GA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function HI() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "HI") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function ID() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "ID") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function IL() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "IL") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function IN() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "IN") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function IA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "IA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function KS() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "KS") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function KY() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "KY") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function LA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "LA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function ME() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "ME") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MD() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MD") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MI() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MI") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MN() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MN") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MS() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MS") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MO() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MO") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function MT() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "MT") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NE() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NE") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NV() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NV") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NH() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NH") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NJ() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NJ") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NM() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NM") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NY() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NY") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function NC() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "NC") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function ND() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "ND") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function OH() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "OH") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function OK() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "OK") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function OR() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "OR") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function PA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "PA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function RI() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "RI") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function SC() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "SC") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function SD() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "SD") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function TN() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "TN") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function TX() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "TX") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function UT() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "UT") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function VT() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "VT") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function VA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "VA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function WA() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "WA") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function WV() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "WV") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function WI() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "WI") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+function WY() {
+  var arr = [];
+  for (let i = 0; i < __WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].length; i++) {
+    if (__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i].state == "WY") {
+      arr.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"][i])
+    }
+  }
+  for (let j = 0; j < arr.length; j++) {
+    let result = ((math.sum(arr[j].anger)) / arr.length);
+    let num = parseFloat(result).toFixed(20);
+    return (num);
+  }
+}
+
+
+
+
+
+
+//OVERALL RANKINGS FOR EACH EMOTION IN ORDER - SORT ALGORITHM
+// Each array will be used to rank congressman on attributes from highest (most) to lowest.
+var angerHighest = [];
+var contemptHighest = [];
+var disgustHighest = [];
+var fearHighest = [];
+var happinessHighest = [];
+var neutralHighest = [];
+var sadnessHighest = [];
+var surpriseHighest = [];
+Array.prototype.sortBy = function(emotionA) {
+  return this.slice(0).sort(function(a, b) {
+    return (a[emotionA] > b[emotionA]) ? 1 : (a[emotionA] < b[emotionA]) ? -1 : 0;
+  });
+}
+// Push to Arrays
+angerHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('anger').reverse());
+contemptHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('contempt').reverse());
+disgustHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('disgust').reverse());
+fearHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('fear').reverse());
+happinessHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('happiness').reverse());
+neutralHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('neutral').reverse());
+sadnessHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('sadness').reverse());
+surpriseHighest.push(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('surprise').reverse());
+console.log(angerHighest[0][10]);
+console.log(__WEBPACK_IMPORTED_MODULE_0__js_congressman_js__["default"].sortBy('anger').reverse()[10])
+
+// function angerSort(a, b) {
+//   if (a.anger < b.anger)
+//     return -1;
+//   if (a.anger > b.anger)
+//     return 1;
+//   return 0;
+// }
+
+// console.log(congressman.sortBy(angerSort).reverse());
+// console.log(congressman.sortBy(angerSort));
+
+
+
+
+
+// INSERT CHARTS BELOW
+// 1. Bar chart - Males vs Females
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt", "Happiness"],
+    datasets: [{
+      label: 'Males',
+      backgroundColor: 'rgba(54, 162, 235, 1)',
+      data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt(), maleAveHappiness()],
+    }, {
+      label: 'Females',
+      backgroundColor: 'rgba(255,99,132,1)',
+      data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt(), femaleAveHappiness()],
+    }]
+  }
+});
+var labels = {
+  "Males": true,
+  "Females": true
+};
+
+
+
+
+//2. Bar chart - Political parties
+var ctxTwo = document.getElementById("myChartTwo").getContext("2d");
+var data = {
+  labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+  datasets: [{
+    label: "Republican",
+    backgroundColor: "red",
+    data: [republicanSurprise(), republicanSadness(), republicanFear(), republicanAnger(), republicanDisgust(), republicanContempt()]
+  }, {
+    label: "Democrat",
+    backgroundColor: "blue",
+    data: [democratSurprise(), democratSadness(), democratFear(), democratAnger(), democratDisgust(), democratContempt()]
+  }, {
+    label: "Independent",
+    backgroundColor: "green",
+    data: [independentSurprise(), independentSadness(), independentFear(), independentAnger(), independentDisgust(), independentContempt()]
+  }]
+};
+var myChartTwo = new Chart(ctxTwo, {
+  type: 'bar',
+  data: data,
+  options: {
+    barValueSpacing: 20,
+    scales: {
+      yAxes: [{
+        ticks: {
+          min: 0,
+        }
+      }]
+    }
+  }
+});
+var labels = {
+  "Republicans": true,
+  "Democrats": true,
+  "Independents": true
+};
+
+
+
+
+//3. Pie Chart - all emotions
+var ctxThree = document.getElementById("myChartThree").getContext('2d');
+var myChartThree = new Chart(ctxThree, {
+  type: 'doughnut',
+  data: {
+    labels: ["Surprise", "Sadness", "Anger", "Fear", "Disgust", "Neutral", "Contempt"],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+        "#95a5a6",
+        "#9b59b6",
+        "#f1c40f",
+        "#e74c3c",
+        "#34495e"
+      ],
+      data: [aveSurprise(), aveSadness(), aveAnger(), aveFear(), aveDisgust(), aveNeutral(), aveContempt()]
+    }]
+  }
+});
+
+
+
+
+//4. Heatmap of Angriest State
+// var map = AmCharts.makeChart( "myChartFour", {
+//   "type": "map",
+//   "theme": "none",
+//   "colorSteps": 10,
+//
+//   "dataProvider": {
+//     "map": "usaLow",
+//     "areas": [ {
+//       "id": "US-AL",
+//       "value": AL()
+//     }, {
+//       "id": "US-AK",
+//       "value": AK()
+//     }, {
+//       "id": "US-AZ",
+//       "value": AZ()
+//     }, {
+//       "id": "US-AR",
+//       "value": AR()
+//     }, {
+//       "id": "US-CA",
+//       "value": CA()
+//     }, {
+//       "id": "US-CO",
+//       "value": CO()
+//     }, {
+//       "id": "US-CT",
+//       "value": CT()
+//     }, {
+//       "id": "US-DE",
+//       "value": DE()
+//     }, {
+//       "id": "US-FL",
+//       "value": FL()
+//     }, {
+//       "id": "US-GA",
+//       "value": GA()
+//     }, {
+//       "id": "US-HI",
+//       "value": HI()
+//     }, {
+//       "id": "US-ID",
+//       "value": ID()
+//     }, {
+//       "id": "US-IL",
+//       "value": IL()
+//     }, {
+//       "id": "US-IN",
+//       "value": IN()
+//     }, {
+//       "id": "US-IA",
+//       "value": IA()
+//     }, {
+//       "id": "US-KS",
+//       "value": KS()
+//     }, {
+//       "id": "US-KY",
+//       "value": KY()
+//     }, {
+//       "id": "US-LA",
+//       "value": LA()
+//     }, {
+//       "id": "US-ME",
+//       "value": ME()
+//     }, {
+//       "id": "US-MD",
+//       "value": MD()
+//     }, {
+//       "id": "US-MA",
+//       "value": MA()
+//     }, {
+//       "id": "US-MI",
+//       "value": MI()
+//     }, {
+//       "id": "US-MN",
+//       "value": MN()
+//     }, {
+//       "id": "US-MS",
+//       "value": MS()
+//     }, {
+//       "id": "US-MO",
+//       "value": MO()
+//     }, {
+//       "id": "US-MT",
+//       "value": MT()
+//     }, {
+//       "id": "US-NE",
+//       "value": NE()
+//     }, {
+//       "id": "US-NV",
+//       "value": NV()
+//     }, {
+//       "id": "US-NH",
+//       "value": NH()
+//     }, {
+//       "id": "US-NJ",
+//       "value": NJ()
+//     }, {
+//       "id": "US-NM",
+//       "value": NM()
+//     }, {
+//       "id": "US-NY",
+//       "value": NY()
+//     }, {
+//       "id": "US-NC",
+//       "value": NC()
+//     }, {
+//       "id": "US-ND",
+//       "value": ND()
+//     }, {
+//       "id": "US-OH",
+//       "value": OH()
+//     }, {
+//       "id": "US-OK",
+//       "value": OK()
+//     }, {
+//       "id": "US-OR",
+//       "value": OR()
+//     }, {
+//       "id": "US-PA",
+//       "value": PA()
+//     }, {
+//       "id": "US-RI",
+//       "value": RI()
+//     }, {
+//       "id": "US-SC",
+//       "value": SC()
+//     }, {
+//       "id": "US-SD",
+//       "value": SD()
+//     }, {
+//       "id": "US-TN",
+//       "value": TN()
+//     }, {
+//       "id": "US-TX",
+//       "value": TX()
+//     }, {
+//       "id": "US-UT",
+//       "value": UT()
+//     }, {
+//       "id": "US-VT",
+//       "value": VT()
+//     }, {
+//       "id": "US-VA",
+//       "value": VA()
+//     }, {
+//       "id": "US-WA",
+//       "value": WA()
+//     }, {
+//       "id": "US-WV",
+//       "value": WV()
+//     }, {
+//       "id": "US-WI",
+//       "value": WI()
+//     }, {
+//       "id": "US-WY",
+//       "value": WY()
+//     } ]
+//   },
+//
+//   "areasSettings": {
+//     "autoZoom": true
+//   },
+//
+//   "valueLegend": {
+//     "right": 10,
+//     "minValue": 0,
+//     "maxValue": 1
+//   },
+//
+//   "export": {
+//     "enabled": true
+//   }
+//
+// } );
+
+
+//5.. Fear vs Surprise
+// new Chart(document.getElementById("myChartFive"), {
+//     type: 'bubble',
+//     data: {
+//       labels: "",
+//       datasets: [
+//         {
+//           label: ["Female Republican"],
+//           backgroundColor: "#D9B5B5",
+//           borderColor: "#5C3E3E",
+//           data: [{
+//             x: 0.4,
+//             y: 0.8,
+//             r: 24
+//           }]
+//         }, {
+//           label: ["Male Republican"],
+//           backgroundColor: "#C16E6E",
+//           borderColor: "#461010",
+//           data: [{
+//             x: 0.2,
+//             y: 0.3,
+//             r: 16
+//           }]
+//         }, {
+//           label: ["Female Democrat"],
+//           backgroundColor: "#CEE2FD",
+//           borderColor: "#495B73",
+//           data: [{
+//             x: 0.8,
+//             y: 0.8,
+//             r: 44
+//           }]
+//         }, {
+//           label: ["Male Democrat"],
+//           backgroundColor: "#93BDF7",
+//           borderColor: "#1144AB",
+//           data: [{
+//             x: 0.3,
+//             y: 0.7,
+//             r: 32
+//           }]
+//         },
+//         {
+//           label: ["Female Independent"],
+//           backgroundColor: "#C6D9B5",
+//           borderColor: "#3C6A13",
+//           data: [{
+//             x: 0.9,
+//             y: 0.9,
+//             r: 52
+//           }]
+//         },
+//         {
+//           label: ["Male Independent"],
+//           backgroundColor: "#A18DBF",
+//           borderColor: "#35136A",
+//           data: [{
+//             x: 0.4,
+//             y: 0.3,
+//             r: 28
+//           }]
+//         }
+//       ]
+//     },
+//     options: {
+//       title: {
+//         display: true,
+//         text: 'Relationship of fear and surprise by political party and gender'
+//       }, scales: {
+//         yAxes: [{
+//           scaleLabel: {
+//             display: true,
+//             labelString: "Surprise"
+//           }
+//         }],
+//         xAxes: [{
+//           scaleLabel: {
+//             display: true,
+//             labelString: "Fear"
+//           }
+//         }]
+//       }
+//     }
+// });
+//
+//
+//
+// //6. Pie Chart - all emotions
+// var ctxThree = document.getElementById("myChartSix").getContext('2d');
+// var myChartThree = new Chart(ctxThree, {
+//   type: 'pie',
+//   data: {
+//     labels: ["Republican Sadness", "Democrat Sadness", "Independent Sdaness"],
+//     datasets: [{
+//       backgroundColor: [
+//         "#803123",
+//         "#3F4F72",
+//         "#275F34"
+//       ],
+//       data: [republicanSadness(), democratSadness(), independentSadness()]
+//     }]
+//   }
+// });
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export congressman */
+var congressman = [{
   "firstName": "Tammy",
   "gender": "female",
   "image": "https://www.govtrack.us/data/photos/400013.jpeg",
@@ -11193,3 +13041,103 @@ export var congressman = [{
   "sadness": 1.41521989E-10,
   "surprise": 2.87176422E-10
 }]
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export search */
+var search = $(document).ready(function() {
+ var termsOne = [];
+  for (var i = 0; i < congressman.length; i++) {
+    termsOne.push(congressman[i].firstName + " " + congressman[i].lastName);
+  }
+  var $terms = termsOne.sort(),
+    $return = [];
+    console.log($terms)
+  function strInArray(str, strArray) {
+    for (var j = 0; j < strArray.length; j++) {
+      if (strArray[j].match(str) && $return.length < 5) {
+        var $h = strArray[j].replace(str, '<strong>' + str + '</strong>');
+        $return.push('<li class="prediction-item"><span class="prediction-text">' + $h + '</span></li>');
+      }
+    }
+  }
+
+  function nextItem(kp) {
+    if ($('.focus').length > 0) {
+      var $next = $('.focus').next(),
+        $prev = $('.focus').prev();
+    }
+    if (kp == 38) { // Up
+      if ($('.focus').is(':first-child')) {
+        $prev = $('.prediction-item:last-child');
+      }
+      $('.prediction-item').removeClass('focus');
+      $prev.addClass('focus');
+    } else if (kp == 40) { // Down
+      if ($('.focus').is(':last-child')) {
+        $next = $('.prediction-item:first-child');
+      }
+      $('.prediction-item').removeClass('focus');
+      $next.addClass('focus');
+    }
+  }
+
+  $(function() {
+    $('#search-bar').keydown(function(e) {
+      $key = e.keyCode;
+      if ($key == 38 || $key == 40) {
+        nextItem($key);
+        return;
+      }
+      setTimeout(function() {
+        var $search = $('#search-bar').val();
+        if ($search) {
+        var toUpper =  $search.charAt(0).toUpperCase() + $search.slice(1);
+        }
+        $return = [];
+        strInArray(toUpper, $terms);
+        if ($search == '' || !$('input').val) {
+          $('.output').html('').slideUp();
+        } else {
+          $('.output').html($return).slideDown();
+        }
+        $('.prediction-item').on('click', function() {
+          $text = $(this).find('span').text();
+          $('.output').slideUp(function() {
+            $(this).html('');
+          });
+          $('#search-bar').val($text);
+        });
+        $('.prediction-item:first-child').addClass('focus');
+
+      }, 50);
+    });
+  });
+
+  $('#search-bar').focus(function() {
+    if ($('.prediction-item').length > 0) {
+      $('.output').slideDown();
+    }
+    $('#searchform').submit(function(e) {
+      e.preventDefault();
+      $text = $('.focus').find('span').text();
+      $('.output').slideUp();
+      $('#search-bar').val($text);
+      $('input').blur();
+    });
+  });
+
+  $('#search-bar').blur(function() {
+    if ($('.prediction-item').length > 0) {
+      $('.output').slideUp();
+    }
+  });
+});
+
+
+/***/ })
+/******/ ]);

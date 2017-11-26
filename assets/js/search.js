@@ -1,4 +1,4 @@
-$(document).ready(function() {
+export var search = $(document).ready(function() {
  var termsOne = [];
   for (var i = 0; i < congressman.length; i++) {
     termsOne.push(congressman[i].firstName + " " + congressman[i].lastName);

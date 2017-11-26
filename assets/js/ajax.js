@@ -78,9 +78,7 @@ $.ajax({
         //localStorage.setItem(19, JSON.stringify(emotion));
         //dataRef.ref().child('Emotions2').push(mainObjectTwo)
       })
-
   });
   //Push congressman data to Firebase DB
   //dataRef.ref().child('Congressman').push(mainObject)
-
 });
