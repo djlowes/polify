@@ -1,4 +1,4 @@
-module.exports = var congressman = [{
+var congressman = [{
   "firstName": "Tammy",
   "gender": "female",
   "image": "https://www.govtrack.us/data/photos/400013.jpeg",
@@ -11193,3 +11193,5 @@ module.exports = var congressman = [{
   "sadness": 1.41521989E-10,
   "surprise": 2.87176422E-10
 }]
+
+module.exports = congressman;
