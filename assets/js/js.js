@@ -102,22 +102,38 @@ var search = $(document).ready(function() {
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt", "Happiness"],
+      labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
       datasets: [{
         label: 'Males',
-        backgroundColor: 'rgba(54, 162, 235, 1)',
-        data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt(), maleAveHappiness()],
+        borderColor: 'rgba(54, 160, 235, 1)',
+        backgroundColor: 'rgba(179, 220, 247, 1)',
+        borderWidth: 1,
+        data: [maleAveSurprise(), maleAveSadness(), maleAveFear(), maleAveAnger(), maleAveDisgust(), maleAveContempt()],
       }, {
         label: 'Females',
         backgroundColor: 'rgba(255,99,132,1)',
-        data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt(), femaleAveHappiness()],
+        borderColor: 'rgba(255,95,132,5)',
+        borderWidth: 1,
+        data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
       }]
     }
   });
-  var labels = {
-    "Males": true,
-    "Females": true
-  };
+
+    // 4. Females (zoomed in)
+    var ctxFour = document.getElementById("myChartFour").getContext('2d');
+    var chartFour = new Chart(ctxFour, {
+      type: 'bar',
+      data: {
+        labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+        datasets: [{
+          label: 'Females',
+          backgroundColor: 'rgba(255,223,230,1)',
+          borderColor: 'rgba(255,99,132,1)',
+          borderWidth: 1,
+          data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
+        }]
+      }
+    });
 
   //2. Bar chart - Political parties
   var ctxTwo = document.getElementById("myChartTwo").getContext("2d");
@@ -151,11 +167,7 @@ var search = $(document).ready(function() {
       }
     }
   });
-  var labels = {
-    "Republicans": true,
-    "Democrats": true,
-    "Independents": true
-  };
+
 
   //3. Pie Chart - all emotions
   var ctxThree = document.getElementById("myChartThree").getContext('2d');
@@ -178,182 +190,178 @@ var search = $(document).ready(function() {
     }
   });
 
-  //4. Heatmap of Angriest State
-  // var map = AmCharts.makeChart( "myChartFour", {
-  //   "type": "map",
-  //   "theme": "none",
-  //   "colorSteps": 10,
-  //
-  //   "dataProvider": {
-  //     "map": "usaLow",
-  //     "areas": [ {
-  //       "id": "US-AL",
-  //       "value": AL()
-  //     }, {
-  //       "id": "US-AK",
-  //       "value": AK()
-  //     }, {
-  //       "id": "US-AZ",
-  //       "value": AZ()
-  //     }, {
-  //       "id": "US-AR",
-  //       "value": AR()
-  //     }, {
-  //       "id": "US-CA",
-  //       "value": CA()
-  //     }, {
-  //       "id": "US-CO",
-  //       "value": CO()
-  //     }, {
-  //       "id": "US-CT",
-  //       "value": CT()
-  //     }, {
-  //       "id": "US-DE",
-  //       "value": DE()
-  //     }, {
-  //       "id": "US-FL",
-  //       "value": FL()
-  //     }, {
-  //       "id": "US-GA",
-  //       "value": GA()
-  //     }, {
-  //       "id": "US-HI",
-  //       "value": HI()
-  //     }, {
-  //       "id": "US-ID",
-  //       "value": ID()
-  //     }, {
-  //       "id": "US-IL",
-  //       "value": IL()
-  //     }, {
-  //       "id": "US-IN",
-  //       "value": IN()
-  //     }, {
-  //       "id": "US-IA",
-  //       "value": IA()
-  //     }, {
-  //       "id": "US-KS",
-  //       "value": KS()
-  //     }, {
-  //       "id": "US-KY",
-  //       "value": KY()
-  //     }, {
-  //       "id": "US-LA",
-  //       "value": LA()
-  //     }, {
-  //       "id": "US-ME",
-  //       "value": ME()
-  //     }, {
-  //       "id": "US-MD",
-  //       "value": MD()
-  //     }, {
-  //       "id": "US-MA",
-  //       "value": MA()
-  //     }, {
-  //       "id": "US-MI",
-  //       "value": MI()
-  //     }, {
-  //       "id": "US-MN",
-  //       "value": MN()
-  //     }, {
-  //       "id": "US-MS",
-  //       "value": MS()
-  //     }, {
-  //       "id": "US-MO",
-  //       "value": MO()
-  //     }, {
-  //       "id": "US-MT",
-  //       "value": MT()
-  //     }, {
-  //       "id": "US-NE",
-  //       "value": NE()
-  //     }, {
-  //       "id": "US-NV",
-  //       "value": NV()
-  //     }, {
-  //       "id": "US-NH",
-  //       "value": NH()
-  //     }, {
-  //       "id": "US-NJ",
-  //       "value": NJ()
-  //     }, {
-  //       "id": "US-NM",
-  //       "value": NM()
-  //     }, {
-  //       "id": "US-NY",
-  //       "value": NY()
-  //     }, {
-  //       "id": "US-NC",
-  //       "value": NC()
-  //     }, {
-  //       "id": "US-ND",
-  //       "value": ND()
-  //     }, {
-  //       "id": "US-OH",
-  //       "value": OH()
-  //     }, {
-  //       "id": "US-OK",
-  //       "value": OK()
-  //     }, {
-  //       "id": "US-OR",
-  //       "value": OR()
-  //     }, {
-  //       "id": "US-PA",
-  //       "value": PA()
-  //     }, {
-  //       "id": "US-RI",
-  //       "value": RI()
-  //     }, {
-  //       "id": "US-SC",
-  //       "value": SC()
-  //     }, {
-  //       "id": "US-SD",
-  //       "value": SD()
-  //     }, {
-  //       "id": "US-TN",
-  //       "value": TN()
-  //     }, {
-  //       "id": "US-TX",
-  //       "value": TX()
-  //     }, {
-  //       "id": "US-UT",
-  //       "value": UT()
-  //     }, {
-  //       "id": "US-VT",
-  //       "value": VT()
-  //     }, {
-  //       "id": "US-VA",
-  //       "value": VA()
-  //     }, {
-  //       "id": "US-WA",
-  //       "value": WA()
-  //     }, {
-  //       "id": "US-WV",
-  //       "value": WV()
-  //     }, {
-  //       "id": "US-WI",
-  //       "value": WI()
-  //     }, {
-  //       "id": "US-WY",
-  //       "value": WY()
-  //     } ]
-  //   },
-  //
-  //   "areasSettings": {
-  //     "autoZoom": true
-  //   },
-  //
-  //   "valueLegend": {
-  //     "right": 10,
-  //     "minValue": 0,
-  //     "maxValue": 1
-  //   },
-  //
-  //   "export": {
-  //     "enabled": true
-  //   }
-  //
-  // } );
+  // 5. Heatmap of Angriest State
+  var map = AmCharts.makeChart( "myChartSeven", {
+    "type": "map",
+    "theme": "none",
+    "colorSteps": 50,
+    "responsive": {
+      "enabled": true
+    },
+    "dataProvider": {
+      "map": "usaLow",
+      "areas": [ {
+        "id": "US-AL",
+        "value": AL()
+      }, {
+        "id": "US-AK",
+        "value": AK()
+      }, {
+        "id": "US-AZ",
+        "value": AZ()
+      }, {
+        "id": "US-AR",
+        "value": AR()
+      }, {
+        "id": "US-CA",
+        "value": CA()
+      }, {
+        "id": "US-CO",
+        "value": CO()
+      }, {
+        "id": "US-CT",
+        "value": CT()
+      }, {
+        "id": "US-DE",
+        "value": DE()
+      }, {
+        "id": "US-FL",
+        "value": FL()
+      }, {
+        "id": "US-GA",
+        "value": GA()
+      }, {
+        "id": "US-HI",
+        "value": HI()
+      }, {
+        "id": "US-ID",
+        "value": ID()
+      }, {
+        "id": "US-IL",
+        "value": IL()
+      }, {
+        "id": "US-IN",
+        "value": IN()
+      }, {
+        "id": "US-IA",
+        "value": IA()
+      }, {
+        "id": "US-KY",
+        "value": KY()
+      }, {
+        "id": "US-LA",
+        "value": LA()
+      }, {
+        "id": "US-ME",
+        "value": ME()
+      }, {
+        "id": "US-MD",
+        "value": MD()
+      }, {
+        "id": "US-MA",
+        "value": MA()
+      }, {
+        "id": "US-MI",
+        "value": MI()
+      }, {
+        "id": "US-MN",
+        "value": MN()
+      }, {
+        "id": "US-MS",
+        "value": MS()
+      }, {
+        "id": "US-MO",
+        "value": MO()
+      }, {
+        "id": "US-MT",
+        "value": MT()
+      }, {
+        "id": "US-NE",
+        "value": NE()
+      }, {
+        "id": "US-NV",
+        "value": NV()
+      }, {
+        "id": "US-NH",
+        "value": NH()
+      }, {
+        "id": "US-NJ",
+        "value": NJ()
+      }, {
+        "id": "US-NM",
+        "value": NM()
+      }, {
+        "id": "US-NY",
+        "value": NY()
+      }, {
+        "id": "US-NC",
+        "value": NC()
+      }, {
+        "id": "US-ND",
+        "value": ND()
+      }, {
+        "id": "US-OH",
+        "value": OH()
+      }, {
+        "id": "US-OK",
+        "value": OK()
+      }, {
+        "id": "US-OR",
+        "value": OR()
+      }, {
+        "id": "US-PA",
+        "value": PA()
+      }, {
+        "id": "US-RI",
+        "value": RI()
+      }, {
+        "id": "US-SC",
+        "value": SC()
+      }, {
+        "id": "US-SD",
+        "value": SD()
+      }, {
+        "id": "US-TN",
+        "value": TN()
+      }, {
+        "id": "US-TX",
+        "value": TX()
+      }, {
+        "id": "US-UT",
+        "value": UT()
+      }, {
+        "id": "US-VT",
+        "value": VT()
+      }, {
+        "id": "US-VA",
+        "value": VA()
+      }, {
+        "id": "US-WA",
+        "value": WA()
+      }, {
+        "id": "US-WI",
+        "value": WI()
+      }, {
+        "id": "US-WY",
+        "value": WY()
+      } ]
+    },
+
+    "areasSettings": {
+      "autoZoom": true
+    },
+
+    "valueLegend": {
+      "right": 10,
+      "minValue": 0,
+      "maxValue": 1
+    },
+
+    "export": {
+      "enabled": true
+    }
+
+  } );
 
 
   //5.. Fear vs Surprise

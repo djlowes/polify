@@ -223,6 +223,11 @@ MODAL
   margin-left: 20px;
 }
 
+#myChartSeven {
+  width: 100%;
+  height: 500px;
+}
+
 
 /*-------------------------------
 MEDIA QUERIES
