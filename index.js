@@ -17,6 +17,8 @@ app.use(express.static(__dirname + '/assets'));
 //------------------------------------------------------------------
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.text());
 
 //Handebars
 //------------------------------------------------------------------
@@ -26,8 +28,10 @@ app.set('view engine', 'handlebars');
 
 //Router
 //------------------------------------------------------------------
-var router = require('./routes/routes.js');
-app.use('/', router);
+var html = require('./routes/routes.js');
+var data = require('./routes/data.js')
+app.use('/', html);
+app.use('/api', data);
 
 //Listening
 //------------------------------------------------------------------
