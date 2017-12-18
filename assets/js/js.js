@@ -1,15 +1,15 @@
-
 //------------------------------------------------------------------
 //Display name logic for the search bar
 //------------------------------------------------------------------
 var search = $(document).ready(function() {
- var termsOne = [];
+  var termsOne = [];
   for (var i = 0; i < congressman.length; i++) {
     termsOne.push(congressman[i].firstName + " " + congressman[i].lastName);
   }
   var $terms = termsOne.sort(),
     $return = [];
-    console.log($terms)
+  console.log($terms)
+
   function strInArray(str, strArray) {
     for (var j = 0; j < strArray.length; j++) {
       if (strArray[j].match(str) && $return.length < 5) {
@@ -49,7 +49,7 @@ var search = $(document).ready(function() {
       setTimeout(function() {
         var $search = $('#search-bar').val();
         if ($search) {
-        var toUpper =  $search.charAt(0).toUpperCase() + $search.slice(1);
+          var toUpper = $search.charAt(0).toUpperCase() + $search.slice(1);
         }
         $return = [];
         strInArray(toUpper, $terms);
@@ -117,21 +117,21 @@ var search = $(document).ready(function() {
     }
   });
 
-    // 4. Females (zoomed in)
-    var ctxFour = document.getElementById("myChartFour").getContext('2d');
-    var chartFour = new Chart(ctxFour, {
-      type: 'bar',
-      data: {
-        labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
-        datasets: [{
-          label: 'Females',
-          backgroundColor: 'rgba(255,223,230,1)',
-          borderColor: 'rgba(255,99,132,1)',
-          borderWidth: 1,
-          data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
-        }]
-      }
-    });
+  // 4. Females (zoomed in)
+  var ctxFour = document.getElementById("myChartFour").getContext('2d');
+  var chartFour = new Chart(ctxFour, {
+    type: 'bar',
+    data: {
+      labels: ["Surprise", "Sadness", "Fear", "Anger", "Disgust", "Contempt"],
+      datasets: [{
+        label: 'Females',
+        backgroundColor: 'rgba(255,223,230,1)',
+        borderColor: 'rgba(255,99,132,1)',
+        borderWidth: 1,
+        data: [femaleAveSurprise(), femaleAveSadness(), femaleAveFear(), femaleAveAnger(), femaleAveDisgust(), femaleAveContempt()],
+      }]
+    }
+  });
 
   //2. Bar chart - Political parties
   var ctxTwo = document.getElementById("myChartTwo").getContext("2d");
@@ -189,7 +189,7 @@ var search = $(document).ready(function() {
   });
 
   // 5. Heatmap of Angriest State
-  var map = AmCharts.makeChart( "myChartSeven", {
+  var map = AmCharts.makeChart("myChartSeven", {
     "type": "map",
     "theme": "none",
     "colorSteps": 50,
@@ -198,7 +198,7 @@ var search = $(document).ready(function() {
     },
     "dataProvider": {
       "map": "usaLow",
-      "areas": [ {
+      "areas": [{
         "id": "US-AL",
         "value": AL()
       }, {
@@ -342,7 +342,7 @@ var search = $(document).ready(function() {
       }, {
         "id": "US-WY",
         "value": WY()
-      } ]
+      }]
     },
 
     "areasSettings": {
@@ -359,7 +359,7 @@ var search = $(document).ready(function() {
       "enabled": true
     }
 
-  } );
+  });
 
 
   //5.. Fear vs Surprise
@@ -467,22 +467,28 @@ var search = $(document).ready(function() {
   //   }
   // });
 
-$("#submit-btn").on("click", function() {
-var name = $("#search-bar").val()
-for (var i = 0; i < congressman.length; i++) {
-  if (name === congressman[i].firstName + " " + congressman[i].lastName) {
-    console.log(congressman[i])
+  $("#submit-btn").on("click", function() {
+    var name = $("#search-bar").val()
+    for (var i = 0; i < congressman.length; i++) {
+      if (name === congressman[i].firstName + " " + congressman[i].lastName) {
+        console.log(congressman[i])
+        var image = document.createElement("IMG");
+        image.alt = (congressman[i].party + " " + congressman[i].role + " " + congressman[i].firstName + " " + congressman[i].lastName);
+        image.src = congressman[i].image;
+        image.width = "200";
+        image.height = "200";
+        $("#photo").html(image);
+        $("#myModalLabel").html(congressman[i].firstName + " " + congressman[i].lastName);
 
-    var image = document.createElement("IMG");
-    image.alt = (congressman[i].party + " " + congressman[i].role + " " + congressman[i].firstName + " " + congressman[i].lastName);
-    image.src = congressman[i].image;
-    image.width = "200";
-    image.height = "200";
-    $("#photo").html(image);
-    $("#myModalLabel").html(congressman[i].firstName + " " + congressman[i].lastName);
-  }
-}
-});
+        for (var j = 0; j < angerHighest.length; j++) {
+          var angerRank = angerHighest.findIndex(function(name) {
+            name === angerHighest[j].firstName + " " + angerHighest[j].lastName
+          });
+          console.log(angerRank)
+        }
+      }
+    }
+  });
 
 
 
@@ -11732,7 +11738,8 @@ function aveHappiness() {
     let num = parseFloat(result).toFixed(20);
     return (num);
   }
-}``
+}
+``
 
 function aveNeutral() {
   for (let i = 0; i < congressman.length; i++) {
@@ -13057,4 +13064,5 @@ neutralHighest.push(congressman.sortBy('neutral').reverse());
 sadnessHighest.push(congressman.sortBy('sadness').reverse());
 surpriseHighest.push(congressman.sortBy('surprise').reverse());
 console.log(angerHighest[0][10]);
+console.log(angerHighest);
 console.log(congressman.sortBy('anger').reverse()[10])
