@@ -467,11 +467,28 @@ var search = $(document).ready(function() {
   //   }
   // });
 
+
+
   $("#submit-btn").on("click", function() {
+
     var name = $("#search-bar").val()
+    var angerHighest = [];
+    angerHighest.push(congressman.sortBy('anger').reverse());
+
+    for (let j = 0; j < angerHighest.length; j++) {
+      for (let k = 0; k < angerHighest[j].length; k++) {
+        // console.log(angerHighest[j][k].firstName)
+        if (name === angerHighest[j][k].firstName + " " + angerHighest[j][k].lastName) {
+          console.log(angerHighest[j][k])
+          var angerRank = k+1;
+          console.log("Anger Rank: ", angerRank);
+        }
+      }
+    }
+
     for (var i = 0; i < congressman.length; i++) {
       if (name === congressman[i].firstName + " " + congressman[i].lastName) {
-        console.log(congressman[i])
+        // console.log(congressman[i])
         var image = document.createElement("IMG");
         image.alt = (congressman[i].party + " " + congressman[i].role + " " + congressman[i].firstName + " " + congressman[i].lastName);
         image.src = congressman[i].image;
@@ -480,12 +497,7 @@ var search = $(document).ready(function() {
         $("#photo").html(image);
         $("#myModalLabel").html(congressman[i].firstName + " " + congressman[i].lastName);
 
-        for (var j = 0; j < angerHighest.length; j++) {
-          var angerRank = angerHighest.findIndex(function(name) {
-            name === angerHighest[j].firstName + " " + angerHighest[j].lastName
-          });
-          console.log(angerRank)
-        }
+
       }
     }
   });
@@ -13041,7 +13053,7 @@ function WY() {
 //------------------------------------------------------------------
 //OVERALL RANKINGS FOR EACH EMOTION IN ORDER - SORT ALGORITHM
 //------------------------------------------------------------------
-var angerHighest = [];
+// var angerHighest = [];
 var contemptHighest = [];
 var disgustHighest = [];
 var fearHighest = [];
@@ -13055,7 +13067,7 @@ Array.prototype.sortBy = function(emotionA) {
   });
 }
 // Push to Arrays
-angerHighest.push(congressman.sortBy('anger').reverse());
+// angerHighest.push(congressman.sortBy('anger').reverse());
 contemptHighest.push(congressman.sortBy('contempt').reverse());
 disgustHighest.push(congressman.sortBy('disgust').reverse());
 fearHighest.push(congressman.sortBy('fear').reverse());
@@ -13063,6 +13075,5 @@ happinessHighest.push(congressman.sortBy('happiness').reverse());
 neutralHighest.push(congressman.sortBy('neutral').reverse());
 sadnessHighest.push(congressman.sortBy('sadness').reverse());
 surpriseHighest.push(congressman.sortBy('surprise').reverse());
-console.log(angerHighest[0][10]);
-console.log(angerHighest);
-console.log(congressman.sortBy('anger').reverse()[10])
+// console.log(angerHighest);
+// console.log(congressman.sortBy('anger').reverse())
