@@ -471,13 +471,39 @@ var search = $(document).ready(function() {
 
   $("#submit-btn").on("click", function() {
 
+    // Value the user types in search bar
     var name = $("#search-bar").val()
-    var angerHighest = [];
-    angerHighest.push(congressman.sortBy('anger').reverse());
 
+    // Sorting function
+    Array.prototype.sortBy = function(emotionA) {
+      return this.slice(0).sort(function(a, b) {
+        return (a[emotionA] > b[emotionA]) ? 1 : (a[emotionA] < b[emotionA]) ? -1 : 0;
+      });
+    }
+
+    // Arrays to order emotional rankings
+    var angerHighest = [];
+    var contemptHighest = [];
+    var disgustHighest = [];
+    var fearHighest = [];
+    var happinessHighest = [];
+    var neutralHighest = [];
+    var sadnessHighest = [];
+    var surpriseHighest = [];
+
+    // Push to Arrays
+    angerHighest.push(congressman.sortBy('anger').reverse());
+    contemptHighest.push(congressman.sortBy('contempt').reverse());
+    disgustHighest.push(congressman.sortBy('disgust').reverse());
+    fearHighest.push(congressman.sortBy('fear').reverse());
+    happinessHighest.push(congressman.sortBy('happiness').reverse());
+    neutralHighest.push(congressman.sortBy('neutral').reverse());
+    sadnessHighest.push(congressman.sortBy('sadness').reverse());
+    surpriseHighest.push(congressman.sortBy('surprise').reverse());
+
+    // Anger ranking for searched user
     for (let j = 0; j < angerHighest.length; j++) {
       for (let k = 0; k < angerHighest[j].length; k++) {
-        // console.log(angerHighest[j][k].firstName)
         if (name === angerHighest[j][k].firstName + " " + angerHighest[j][k].lastName) {
           console.log(angerHighest[j][k])
           var angerRank = k+1;
@@ -486,9 +512,79 @@ var search = $(document).ready(function() {
       }
     }
 
+    // Contempt ranking for searched user
+    for (let j = 0; j < contemptHighest.length; j++) {
+      for (let k = 0; k < contemptHighest[j].length; k++) {
+        if (name === contemptHighest[j][k].firstName + " " + contemptHighest[j][k].lastName) {
+          var contemptRank = k+1;
+          console.log("Contempt Rank: ", contemptRank);
+        }
+      }
+    }
+
+    // Disgust ranking for searched user
+    for (let j = 0; j < disgustHighest.length; j++) {
+      for (let k = 0; k < disgustHighest[j].length; k++) {
+        if (name === disgustHighest[j][k].firstName + " " + disgustHighest[j][k].lastName) {
+          var disgustRank = k+1;
+          console.log("Disgust Rank: ", disgustRank);
+        }
+      }
+    }
+
+    // Fear ranking for searched user
+    for (let j = 0; j < fearHighest.length; j++) {
+      for (let k = 0; k < fearHighest[j].length; k++) {
+        if (name === fearHighest[j][k].firstName + " " + fearHighest[j][k].lastName) {
+          var fearRank = k+1;
+          console.log("Fear Rank: ", fearRank);
+        }
+      }
+    }
+
+    // Happiness ranking for searched user
+    for (let j = 0; j < happinessHighest.length; j++) {
+      for (let k = 0; k < happinessHighest[j].length; k++) {
+        if (name === happinessHighest[j][k].firstName + " " + happinessHighest[j][k].lastName) {
+          var happinessRank = k+1;
+          console.log("Happiness Rank: ", happinessRank);
+        }
+      }
+    }
+
+    // Neutral ranking for searched user
+    for (let j = 0; j < neutralHighest.length; j++) {
+      for (let k = 0; k < neutralHighest[j].length; k++) {
+        if (name === neutralHighest[j][k].firstName + " " + neutralHighest[j][k].lastName) {
+          var neutralRank = k+1;
+          console.log("Neutral Rank: ", neutralRank);
+        }
+      }
+    }
+
+    // Sadness ranking for searched user
+    for (let j = 0; j < sadnessHighest.length; j++) {
+      for (let k = 0; k < sadnessHighest[j].length; k++) {
+        if (name === sadnessHighest[j][k].firstName + " " + sadnessHighest[j][k].lastName) {
+          var sadnessRank = k+1;
+          console.log("Sadness Rank: ", sadnessRank);
+        }
+      }
+    }
+
+    // Surprise ranking for searched user
+    for (let j = 0; j < surpriseHighest.length; j++) {
+      for (let k = 0; k < surpriseHighest[j].length; k++) {
+        if (name === surpriseHighest[j][k].firstName + " " + surpriseHighest[j][k].lastName) {
+          var surpriseRank = k+1;
+          console.log("Surprise Rank: ", surpriseRank);
+        }
+      }
+    }
+
+    // Filling data into Modal
     for (var i = 0; i < congressman.length; i++) {
       if (name === congressman[i].firstName + " " + congressman[i].lastName) {
-        // console.log(congressman[i])
         var image = document.createElement("IMG");
         image.alt = (congressman[i].party + " " + congressman[i].role + " " + congressman[i].firstName + " " + congressman[i].lastName);
         image.src = congressman[i].image;
@@ -496,7 +592,7 @@ var search = $(document).ready(function() {
         image.height = "200";
         $("#photo").html(image);
         $("#myModalLabel").html(congressman[i].firstName + " " + congressman[i].lastName);
-
+        $("#angRank").html(angerRank);
 
       }
     }
@@ -13049,31 +13145,3 @@ function WY() {
     return (num);
   }
 }
-
-//------------------------------------------------------------------
-//OVERALL RANKINGS FOR EACH EMOTION IN ORDER - SORT ALGORITHM
-//------------------------------------------------------------------
-// var angerHighest = [];
-var contemptHighest = [];
-var disgustHighest = [];
-var fearHighest = [];
-var happinessHighest = [];
-var neutralHighest = [];
-var sadnessHighest = [];
-var surpriseHighest = [];
-Array.prototype.sortBy = function(emotionA) {
-  return this.slice(0).sort(function(a, b) {
-    return (a[emotionA] > b[emotionA]) ? 1 : (a[emotionA] < b[emotionA]) ? -1 : 0;
-  });
-}
-// Push to Arrays
-// angerHighest.push(congressman.sortBy('anger').reverse());
-contemptHighest.push(congressman.sortBy('contempt').reverse());
-disgustHighest.push(congressman.sortBy('disgust').reverse());
-fearHighest.push(congressman.sortBy('fear').reverse());
-happinessHighest.push(congressman.sortBy('happiness').reverse());
-neutralHighest.push(congressman.sortBy('neutral').reverse());
-sadnessHighest.push(congressman.sortBy('sadness').reverse());
-surpriseHighest.push(congressman.sortBy('surprise').reverse());
-// console.log(angerHighest);
-// console.log(congressman.sortBy('anger').reverse())

@@ -232,10 +232,11 @@ MODAL
   border-radius: 10px;
 }
 
-/*#emotions-body {
+#emotions-body {
   color: black;
   font-size: 1em;
-}*/
+  margin-left: 5px;
+}
 
 
 /*-------------------------------

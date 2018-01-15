@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/api">Data</a>
+          <a class="nav-link" href="/api">API</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://www.djlowes.com">Contact</a>
@@ -41,11 +41,13 @@
             <h4 class="modal-title" id="myModalLabel"></h4>
           </div>
           <div class="modal-body">
-            <div id="photo" class="column">
+          <div class="row">
+            <div id="photo" class="column"></div>
+            <div id="emotions-body" class="column">
+              <img src="../img/angry.png"> Anger = <span id="angRank"></span> / 541<br>
+
+            </div>
           </div>
-          <div id="emotions-body" class="columns"></div>
-          <hr>
-          <br>
           </div>
           <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
@@ -184,15 +186,11 @@
       </li>
       <li class="footer-menu-divider list-inline-item">&sdot;</li>
       <li class="list-inline-item">
-        <a href="/data">Data</a>
+        <a href="/api">Data</a>
       </li>
       <li class="footer-menu-divider list-inline-item">&sdot;</li>
       <li class="list-inline-item">
-        <a href="http://www.djlowes.com">Cryptocurrency Simulator</a>
-      </li>
-      <li class="footer-menu-divider list-inline-item">&sdot;</li>
-      <li class="list-inline-item">
-        <a href="http://www.djlowes.com">Me</a>
+        <a href="http://www.djlowes.com">More about me</a>
       </li>
     </ul>
     <p class="copyright text-muted small">Copyright &copy; David Lowes 2017. All Rights Reserved</p>
