@@ -40,17 +40,54 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
             <h4 class="modal-title" id="myModalLabel"></h4>
           </div>
-          <div class="modal-body">
-          <div class="row">
-            <div id="photo" class="column"></div>
-            <div id="emotions-body" class="column">
-              <img src="../img/angry.png"> Anger = <span id="angRank"></span> / 541<br>
-
+          <div class="container">
+            <div class="row">
+              <div id="photo" class="col-6">"></div>
+              <div class="col">
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Anger: </span></div>
+                  <div class="col-4" id="lastCol"><span id="angRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Happiness: </span></div>
+                  <div class="col-4" id="lastCol"><span id="hapRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Disgust: </span></div>
+                  <div class="col-4" id="lastCol"><span id="disRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Fear: </span></div>
+                  <div class="col-4" id="lastCol"><span id="feaRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Surprise: </span></div>
+                  <div class="col-4" id="lastCol"><span id="surRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Sadness: </span></div>
+                  <div class="col-4" id="lastCol"><span id="sadRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Contempt: </span></div>
+                  <div class="col-4" id="lastCol"><span id="conRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+                <div class="row">
+                  <div class="col-7" id="midCol"><img id="emoji" src="../img/angry.png"><span id="emotion">Neutral: </span></div>
+                  <div class="col-4" id="lastCol"><span id="neuRank"></span><span id="ovRank">  /  541</span></div>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="container">
+            <div class="row">
+              <div id="state" class="col-2">State: <span id="st"></span></div>
+              <div id="twitter" class="col-5"><img id="twitterIcon" src="../img/twitter.jpeg">@ <span id="tw"></span></div>
+              <div id="youtube" class="col-5"><img id="youtubeIcon" src="../img/youtube.png"> <span id="yo"></span></div>
+            </div>
           </div>
           <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about <span id="bName"></span></button>
               </div>
           </div>
       </div>

@@ -582,17 +582,64 @@ var search = $(document).ready(function() {
       }
     }
 
+    if (angerRank || happinessRank || disgustRank || fearRank || surpriseRank || sadnessRank || contemptRank || neutralRank < 100) {
+      $("#angRank").css("color", "#0B5345");
+      $("#hapRank").css("color", "#0B5345");
+      $("#disRank").css("color", "#0B5345");
+      $("#feaRank").css("color", "#0B5345");
+      $("#surRank").css("color", "#0B5345");
+      $("#sadRank").css("color", "#0B5345");
+      $("#conRank").css("color", "#0B5345");
+      $("#neuRank").css("color", "#0B5345");
+    } else if (angerRank || happinessRank || disgustRank || fearRank || surpriseRank || sadnessRank || contemptRank || neutralRank <= 200 && angerRank || happinessRank || disgustRank || fearRank || surpriseRank || sadnessRank || contemptRank || neutralRank > 100) {
+      $("#angRank").css("color", "blue");
+      $("#hapRank").css("color", "blue");
+      $("#disRank").css("color", "blue");
+      $("#feaRank").css("color", "blue");
+      $("#surRank").css("color", "blue");
+      $("#sadRank").css("color", "blue");
+      $("#conRank").css("color", "blue");
+      $("#neuRank").css("color", "blue");
+    } else {
+      $("#angRank").css("color", "#red");
+      $("#hapRank").css("color", "#red");
+      $("#disRank").css("color", "#red");
+      $("#feaRank").css("color", "#red");
+      $("#surRank").css("color", "#red");
+      $("#sadRank").css("color", "#red");
+      $("#conRank").css("color", "#red");
+      $("#neuRank").css("color", "#red");
+    }
+
     // Filling data into Modal
     for (var i = 0; i < congressman.length; i++) {
       if (name === congressman[i].firstName + " " + congressman[i].lastName) {
         var image = document.createElement("IMG");
+        image.style.borderRadius = "10px";
         image.alt = (congressman[i].party + " " + congressman[i].role + " " + congressman[i].firstName + " " + congressman[i].lastName);
         image.src = congressman[i].image;
-        image.width = "200";
-        image.height = "200";
+        image.width = "250";
+        image.height = "250";
+        var twitter = congressman[i].twitter;
+        var state = congressman[i].state;
+        var youtube = congressman[i].youtube;
+        var bName =  congressman[i].firstName;
+
+
         $("#photo").html(image);
         $("#myModalLabel").html(congressman[i].firstName + " " + congressman[i].lastName);
         $("#angRank").html(angerRank);
+        $("#hapRank").html(happinessRank);
+        $("#disRank").html(disgustRank);
+        $("#feaRank").html(fearRank);
+        $("#surRank").html(surpriseRank);
+        $("#sadRank").html(sadnessRank);
+        $("#conRank").html(contemptRank);
+        $("#neuRank").html(neutralRank);
+        $("#st").html(state);
+        $("#tw").html(twitter);
+        $("#yo").html(youtube);
+        $("#bName").html(bName);
 
       }
     }

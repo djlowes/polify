@@ -216,11 +216,14 @@ MODAL
   text-align: left;
   color: black;
   padding: 5px;
+  margin-left: 10px;
 }
 
 #photo {
   display: flex;
-  margin-left: 20px;
+  margin-left: 5px;
+  border-radius: 5px;
+  padding-left: 0px;
 }
 
 #myChartSeven {
@@ -232,10 +235,84 @@ MODAL
   border-radius: 10px;
 }
 
-#emotions-body {
+#emoji {
+  height: 32px;
+  width: 32px;
+  margin-left: 10px;
+}
+
+#angRank, #emotion {
   color: black;
   font-size: 1em;
+}
+
+#ovRank {
+  color: black;
+  font-size: 1em;
+}
+
+#lastCol {
+  margin-top: 5px;
+  font-size: 0.75em;
+}
+
+#midCol {
+  margin-top: 0px;
+  text-align: left;
   margin-left: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#state {
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 1em;
+  margin-top: 2px;
+}
+
+#twitter {
+  color: #283747;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
+
+}
+
+#twitterIcon {
+  height: 28px;
+  width: 28px;
+}
+
+#youtube {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#youtubeIcon {
+  height: 20px;
+  width: 20px;
+}
+
+#st {
+  color: #283747;
+  font-size: 0.85em;
+}
+
+#tw {
+  color: #283747;
+  font-size: 0.85em;
+}
+
+#yo {
+  color: #283747;
+  font-size: 0.85em;
 }
 
 
