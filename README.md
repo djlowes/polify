@@ -1,4 +1,4 @@
-![Polify Logo](./assets/img/polify.png)
+![Polify Logo](./assets/img/polify1.png)
 
 #### How angry is your local politician?
 
@@ -8,7 +8,7 @@ Using facial recognition technology, Polify analyzes the data of the current US 
 ## Demo:
 You can view a demo [here](https://powerful-falls-30211.herokuapp.com/)
 
-![Polify Screenshot](./assets/img/screenshot.png)
+![Polify Screenshot](./assets/img/screenshot1.png)
 
 ## Technology
 * Microsoft Azure Emotion API
