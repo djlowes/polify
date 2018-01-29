@@ -1,4 +1,4 @@
-![Review Butler Web App Logo](ReviewButler-logo.png "ReviewButler Logo")
+![Polify Logo](./assets/img/polify.png)
 
 #### How angry is your local politician?
 
@@ -8,7 +8,7 @@ Using facial recognition technology, Polify analyzes the data of the current US 
 ## Demo:
 You can view a demo [here](https://powerful-falls-30211.herokuapp.com/)
 
-![Review Butler Screenshot](ReviewButler300.png "Review Butler Screenshot")
+![Polify Screenshot](./assets/img/screenshot.png)
 
 ## Technology
 * Microsoft Azure Emotion API
